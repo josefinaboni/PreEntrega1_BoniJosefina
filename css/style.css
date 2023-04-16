@@ -169,7 +169,7 @@ box-sizing: border-box
     {color: rgb(255, 255, 255);
         background-color: rgb(180, 226, 247);
         font-size: 1,5rem;
-        height: 23vh;
+        height: auto;
         width: 100%;
         text-align: center;
         font-size: 1rem;
