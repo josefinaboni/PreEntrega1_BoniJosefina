@@ -1,0 +1,203 @@
+/*esto es un comentario*/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,200&display=swap');
+*{ margin: 0;
+padding: 0;
+box-sizing: border-box
+;
+}
+    .body
+    { background-color: rgb(229, 242, 230);
+    font-family: 'Nunito', sans-serif;
+    }
+    .grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+       
+        
+    }
+    .header
+    {background-color:rgb(229, 242, 230) ;
+    height: 15vh;
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    }
+    
+    
+    .contenedorLogo 
+    {display: flex;
+    justify-content: flex-start;
+    width: 10rem;
+    height: 1vh;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    
+    }
+    
+    .logo
+    { width: 8rem;}
+    
+    .ul{
+        height: 15vh;
+        display:flex;
+        list-style: none;
+        justify-content: flex-end;
+        align-items:center;
+    }
+    
+    .listaNav
+    {list-style: none ; 
+        padding: 1rem; 
+        margin: 0,5rem; 
+        width: 8rem;
+    }
+    
+    .linkNav
+    {color: rgb(202, 99, 164); 
+        text-decoration:none; 
+        font-weight: 800; 
+        font-size: 1,75rem; 
+        
+    }
+    
+    .contenedorTitulo
+    { color: rgb(202, 99, 164); 
+        font-size: 3rem; 
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+        margin-bottom: 1rem;
+        background-image: url(../assets/img/fondo\ titulo\ op.JPG);  background-size: cover; 
+        background-repeat: no-repeat; 
+        background-attachment: fixed; 
+        background-position: center;
+     
+    }
+    .titulo
+     {font-weight: 300;
+        
+        padding: 8rem 
+       }
+    
+    
+    .contenedorTexto
+    {color: rgb(202, 99, 164);
+         font-size: 1rem; 
+         text-align: center; 
+         padding: auto; 
+         margin: 2rem 15rem 2rem 15rem;}
+    
+    .contenedorTexto h2
+    {font-weight: 100;}
+
+    .contenedorVideo{
+        height: 20rem;
+        background-color: rgb(180, 226, 247); 
+        margin: 1rem;
+        border-radius: 1rem;
+        display:flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contenedorVideo video{
+        height: 20rem;
+        padding: 1rem 1rem 1rem 1rem;
+        margin: 1rem;
+        
+    }
+
+    .contenedorGaleria
+    {    display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .imagenes{ 
+        background-color: rgb(180, 226, 247);
+        padding: 1rem 2rem 1rem 2rem;
+        margin: 1rem;
+        border-radius: 1rem 
+    }
+    .imagenes img{ 
+        width: 100%;
+        height: 40vh;
+    }
+    .sectionCards{ 
+        text-align: center;
+        margin-bottom: 3rem ;
+    }
+    .contenedorTarjetas{
+        display: flex;
+        flex-direction:row ;
+        justify-content:center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    
+    .tarjetas{
+        background-color: rgb(180, 226, 247);
+        width: 30%;
+        padding: 0,5rem;
+        border-radius: 1rem ; 
+        margin: 1rem;
+        
+    }
+    
+    .tarjetas img { 
+        width: 90%;
+        height: 30vh;
+        object-fit: cover;
+       
+    }
+    .tarjetas h3{ 
+        color: rgb(202, 99, 164);
+    }
+    
+    .formulario
+     { color: rgb(0, 0, 0);
+        background-color: rgb(235, 205, 233); 
+        font-size: 1rem; 
+        display: inline-block;}
+    
+    ::placeholder
+    {color: rgb(0, 0, 0);}
+    
+    .footer
+    {color: rgb(255, 255, 255);
+        background-color: rgb(180, 226, 247);
+        font-size: 1,5rem;
+        height: 23vh;
+        width: 100%;
+        text-align: center;
+        font-size: 1rem;
+    
+        
+    }
+    .contenedorIconos{ 
+        padding-top: 1,5rem;
+    }
+    .iconos
+     { color: rgb(202, 99, 164); 
+        font-size: 4rem;
+         display:inline-block; 
+        align-items: center;
+     padding: 1rem;
+    }
+    .ulFooter {
+        display: flex;
+        list-style: none;
+        justify-content:center;
+        align-items:center;
+    }
+     .contenedorCreditos {
+        padding-top: 1rem;
+        display: flex;
+        justify-content:center;
+        align-items:center;
+     }
+    
+     
+    
