@@ -105,10 +105,7 @@ box-sizing: border-box
     font-size: 1rem;
 
     }
-    .contenedorTextoUl{
-        font-size: 0,5rem; 
-        font-weight: 700;
-    }
+    
     .tarjetas{
         height: auto !important;
     }
