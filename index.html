@@ -12,91 +12,109 @@
     </head>
 
     <body  class="body">
-        <div class="grid">
-        <header class="header">
-                <div class="contenedorLogo">
-                    <a href="#"> <img class="logo" src="./assets/img/logo.png" alt="logojpng"></a>
-                </div>
-             
-                <nav>
-                    <ul class="ul">
-                        <li class="listaNav"><a class="linkNav" href="#">Inicio</a></li>
-                        <li class="listaNav"><a class="linkNav" href="./page/que es to.html">Qué es T.O</a></li>
-                        <li class="listaNav"><a class="linkNav"  href="./page/nosotros.html">Nosotros</a></li>
-                        <li class="listaNav"><a class="linkNav" href="./page/consultorio.html">Consultorio</a></li>
-                        <li class="listaNav"><a class="linkNav" href="./page/contacto.html">Contacto</a></li>
-                       
-                           
+       
+        <header class="header container-fluid">
+            
+            <nav class="navbar navbar-expand-lg navbar-light bg-transparent">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#"><img src="./assets/img/logo.png" alt="" width="100px" ></a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav w-100 justify-content-evenly">
+                      <li class="nav-item">
+                        <a class="nav-link linkNav" aria-current="page" href="#">Inicio</a>
+                      </li>
+                      
+                      <li class="nav-item">
+                        <a class="nav-link linkNav" href="./page/que es to.html">Qué es T.O</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link linkNav" href="./page/nosotros.html" >Nosotros</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link linkNav" href="./page/consultorio.html" >Consultorio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link linkNav" href="./page/contacto.html" >Contacto</a>
+                      </li>
                     </ul>
-                </nav>
-                
+                  </div>
+                </div>
+              </nav>
+       
             </header>
     
             <main>
-                <section>
+                <section class="container-fluid">
                     <div class="contenedorTitulo" >
                         
                         <h1 class="titulo" >SOY MAMA Y T.O</h1>
                         
                     </div >
                 </section>
-    
-                <section class="sectionCards">
-                    
-                    <div class="contenedorTexto"> 
-                        <h2 >Jugando, aprendiendo y creciendo juntos: nuestra terapia ocupacional infantil ayuda a los niños a alcanzar su máximo potencial en un ambiente divertido y seguro.</h2>
+                <div class="contenedorTextoIndex container"> 
+                    <h2 >Jugando, aprendiendo y creciendo juntos: nuestra terapia ocupacional infantil ayuda a los niños a alcanzar su máximo potencial en un ambiente divertido y seguro.</h2>
+                </div>
+
+                <div class="card-group container ">
+                    <div class="card p-2 m-2 col-sm-12 col-md-4 tarjetas">
+                      <img src="./assets/img/bloaques.jpg" class="card-img-top" alt="quee ess to">
+                      <div class="card-body">
+                        <h5 class="card-title">Qué es T.O?</h5>
+                        <p class="card-text"> Nos enfocamos en ayudar a los niños a alcanzar su máximo potencial en las actividades cotidianas y en la participación en su entorno.  </p>
+                        <a class="nav-link" href="./page/que es to.html">Ver más</a>
+                      </div>
                     </div>
-        <div class="contenedorTarjetas">
-        <div class="tarjetas">
-            <h3> Qué es T.O</h3>
-            <a href="./page/que es to.html" > <img src="./assets/img/bloaques.jpg" width="200px" alt="que es to"></a>
-            
-        </div>
-    
-        <div class="tarjetas">
-            <h3> Nosotros</h3>
-            <a href="./page/nosotros.html"> <img src="./assets/img/pelotas.jpg" width="200px" alt="nosotros"></a>
-            
-        </div>
-    
-        <div class="tarjetas">
-            <h3> Consultorio</h3>
-            <a href="./page/consultorio.html"> <img src="./assets/img/pelota.jpg" width="200px" alt="consultorio"></a>
-            
-        </div>
-    
-    </div>
-                    
-                </section>
-    
+                    <div class="card p-2 m-2 col-sm-12 col-md-4 tarjetas">
+                      <img src="./assets/img/pelotas.jpg"" class="card-img-top" alt="nosotros">
+                      <div class="card-body">
+                        <h5 class="card-title">Nosotros</h5>
+                        <p class="card-text">Contamos con un amplio equipo de profesionaless para poder tratar de manera especifica y particular.
+                          Asi como psicologa, terapeuta, fisioterapeuta,etc.
+                        </p>
+                        <a class="nav-link" href="./page/nosotros.html">Ver más</a>
+                        
+                      </div>
+                    </div>
+                    <div class="card p-2 m-2 col-sm-12 col-md-4 tarjetas">
+                      <img src="./assets/img/pelota.jpg" class="card-img-top" alt="conssultorio">
+                      <div class="card-body">
+                        <h5 class="card-title">Consultorio</h5>
+                        <p class="card-text">Nuestro consultorio cuenta con todo tipo de elementos y juegos para realizar las distintas actividades</p>
+                        <a class="nav-link" href="./page/consultorio.html">Ver más</a>
+                        
+                      </div>
+                    </div>
+                  </div>
+
                 <main >
     
     
-            <footer class="footer">
-                <hr>
-            
-                <div class="contenedorIconos">
-                    <a href="https://www.instagram.com/soymamayto/" target="_blank"> <i class="iconos fa-brands fa-instagram" ></i></a>
-                    <a href=" https://web.whatsapp.com" target="_blank"> <i class="iconos fa-brands fa-whatsapp"></i></a>
-                    <a href="https://www.tiktok.com/es/" target="_blank"> <i class="iconos fa-brands fa-tiktok"></i></a>
+            <footer class="footer container-fluid ">
+              <div class=" d-flex justify-content-center">
+                <div class="row ">
+                  <div class="col"><a href="https://www.instagram.com/soymamayto/" target="_blank"> <i class="iconos fa-brands fa-instagram" ></i></a></div>
+                  <div class="col"><a href=" https://web.whatsapp.com" target="_blank"> <i class="iconos fa-brands fa-whatsapp"></i></a></div>
+                  <div class="col"><a href="https://www.tiktok.com/es/" target="_blank"> <i class="iconos fa-brands fa-tiktok"></i></a></div>
                 </div>
-                <nav class="nav">
-                    <ul class="ulFooter">
-                        <li class="listaNav"><a class="linkNav" href="#">Inicio</a></li>
-                        <li class="listaNav"><a class="linkNav"  href="./page/nosotros.html">Nosotros</a></li>
-                        <li class="listaNav"><a class="linkNav" href="./page/que es to.html">Qué es T.O</a></li>
-                        <li class="listaNav"><a class="linkNav" href="./page/consultorio.html">Consultorio</a></li>
-                        <li class="listaNav"><a class="linkNav" href="./page/contacto.html">Contacto</a></li>
-                       
-                    </ul>
-                </nav>
-                
+              </div>
+             
+                <div class="row ">
+                  <div class="col"><a class="linkNav" href="#">Inicio</a></div>
+                  <div class="col"><a class="linkNav"  href="./page/nosotros.html">Nosotros</a></div>
+                  <div class="col"><a class="linkNav" href="./page/que es to.html">Qué es T.O</a></div>
+                  <div class="col"><a class="linkNav" href="./page/consultorio.html">Consultorio</a></div>
+                  <div class="col"><a class="linkNav" href="./page/contacto.html">Contacto</a></div>
+              </div>
+               
                 <div class="contenedorCreditos">
                     <p> Creado por Josefina Boni</p>
                 </div>
                 
             </footer>
-        </div>
+        
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
         </body>
     </html>

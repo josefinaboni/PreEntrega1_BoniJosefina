@@ -9,51 +9,16 @@ box-sizing: border-box
     { background-color: rgb(229, 242, 230);
     font-family: 'Nunito', sans-serif;
     }
-    .grid{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: auto;
-       
-        
-    }
+    
     .header
-    {background-color:rgb(229, 242, 230) ;
-    height: 15vh;
-    position: sticky;
+    {background-color:rgb(229, 242, 230);
+    position: sticky; 
+    z-index: 1020;
     top: 0;
     bottom: 0;
     }
     
-    
-    .contenedorLogo 
-    {display: flex;
-    justify-content: flex-start;
-    width: 10rem;
-    height: 1vh;
-    padding-top: 1rem;
-    padding-left: 1rem;
-    
-    }
-    
-    .logo
-    { width: 8rem;}
-    
-    .ul{
-        height: 15vh;
-        display:flex;
-        list-style: none;
-        justify-content: flex-end;
-        align-items:center;
-    }
-    
-    .listaNav
-    {list-style: none ; 
-        padding: 1rem; 
-        margin: 0,5rem; 
-        width: 8rem;
-    }
-    
-    .linkNav
+    .navbar-light .navbar-nav .linkNav
     {color: rgb(202, 99, 164); 
         text-decoration:none; 
         font-weight: 800; 
@@ -81,32 +46,110 @@ box-sizing: border-box
         
         padding: 8rem 
        }
-    
-    
-    .contenedorTexto
+       .contenedorTextoIndex
     {color: rgb(202, 99, 164);
-         font-size: 1rem; 
-         text-align: center; 
-         padding: auto; 
-         margin: 2rem 15rem 2rem 15rem;}
+        text-align: center;
+         
+        }
+        .contenedorTextoIndex h2
+        {font-weight: 300;
+        font-size: 1,5rem;
+        
+        
+    }
+    .containterPrimerCaja{
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+    }
     
-    .contenedorTexto h2
-    {font-weight: 100;}
+    .columnaIzquierda{ background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
+        height: 35vh;
+        background-repeat: no-repeat ;
+        background-size: cover;
+        background-position: center; 
+    }
 
-    .contenedorVideo{
-        height: 20rem;
-        background-color: rgb(180, 226, 247); 
-        margin: 1rem;
-        border-radius: 1rem;
-        display:flex;
+    .columnaDerecha{
+        height: 35vh;
+        background-color: rgb(255, 255, 255);
+        display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: center;
     }
-    .contenedorVideo video{
-        height: 20rem;
-        padding: 1rem 1rem 1rem 1rem;
-        margin: 1rem;
+    .columnaIzquierdaSegundo{ background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
+        height: 35vh;
+        background-repeat: no-repeat ;
+        background-size: cover;
+        background-position: center; 
+    }
+    .columnaIzquierdaTercer{ background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
+        height: 35vh;
+        background-repeat: no-repeat ;
+        background-size: cover;
+        background-position: center; 
+    }
+    .contenedorTexto
+    {color: rgb(202, 99, 164);
+        text-align: center;
+         
+        }
+    .contenedorTexto h2
+        {font-size: 1rem;
+        font-weight: 700;
         
+    }
+
+    .contenedorTexto p
+    {font-weight: 300;
+    font-size: 1rem;
+
+    }
+    .contenedorTextoUl{
+        font-size: 0,5rem; 
+        font-weight: 700;
+    }
+    .tarjetas{
+        height: auto !important;
+    }
+
+    .tarjetas img { 
+        width: 100%;
+        
+        object-fit: cover;
+       
+    }
+    
+    .tarjetas h5{ 
+        color: rgb(202, 99, 164);
+        font-weight: 700;
+    }
+
+    .contenedorVideo{
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 1rem;
+        background-color: rgb(250, 250, 250);
+    }
+    .contenedorVideo video{
+        height: 35vh;
+        width: 100%;
+        
+    }
+    .contenedorTextoNosotros{
+        color: rgb(202, 99, 164); 
+        background-color:rgb(253, 253, 253);
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        
+
+    }
+    .contenedorTextoNosotros h3 {
+        font-size: 1rem; 
+        font-weight: 200;
     }
 
     .contenedorGaleria
@@ -116,44 +159,21 @@ box-sizing: border-box
         align-items: center;
     }
     .imagenes{ 
-        background-color: rgb(180, 226, 247);
+        background-color: rgb(255, 255, 255);
         padding: 1rem 2rem 1rem 2rem;
         margin: 1rem;
-        border-radius: 1rem 
+        
     }
     .imagenes img{ 
         width: 100%;
         height: 40vh;
     }
-    .sectionCards{ 
-        text-align: center;
-        margin-bottom: 3rem ;
-    }
-    .contenedorTarjetas{
-        display: flex;
-        flex-direction:row ;
-        justify-content:center;
-        align-items: center;
-        flex-wrap: wrap;
-    }
     
-    .tarjetas{
-        background-color: rgb(180, 226, 247);
-        width: 30%;
-        padding: 0,5rem;
-        border-radius: 1rem ; 
-        margin: 1rem;
-        
-    }
-    
-    .tarjetas img { 
-        width: 90%;
-        height: 30vh;
-        object-fit: cover;
-       
-    }
-    .tarjetas h3{ 
+    .textoGaleria p{
         color: rgb(202, 99, 164);
+        font-size: 2rem;
+        font-weight: 700;
+
     }
     
     .formulario
@@ -173,12 +193,11 @@ box-sizing: border-box
         width: 100%;
         text-align: center;
         font-size: 1rem;
+        margin-top: 2rem;
     
         
     }
-    .contenedorIconos{ 
-        padding-top: 1,5rem;
-    }
+    
     .iconos
      { color: rgb(202, 99, 164); 
         font-size: 4rem;
@@ -186,11 +205,14 @@ box-sizing: border-box
         align-items: center;
      padding: 1rem;
     }
-    .ulFooter {
-        display: flex;
-        list-style: none;
-        justify-content:center;
-        align-items:center;
+    
+    .linkNav
+    {color: rgb(202, 99, 164); 
+        text-decoration:none; 
+        font-weight: 800; 
+        font-size: 1,75rem; 
+        
+        
     }
      .contenedorCreditos {
         padding-top: 1rem;
@@ -198,6 +220,4 @@ box-sizing: border-box
         justify-content:center;
         align-items:center;
      }
-    
-     
-    
+   
