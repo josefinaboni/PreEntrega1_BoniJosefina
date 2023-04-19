@@ -105,7 +105,7 @@ box-sizing: border-box
     font-size: 1rem;
 
     }
-    
+   
     .tarjetas{
         height: auto !important;
     }
@@ -117,7 +117,7 @@ box-sizing: border-box
        
     }
     
-    .tarjetas h5{ 
+    .tarjetas h3{ 
         color: rgb(202, 99, 164);
         font-weight: 700;
     }
@@ -173,14 +173,20 @@ box-sizing: border-box
 
     }
     
-    .formulario
-     { color: rgb(0, 0, 0);
-        background-color: rgb(235, 205, 233); 
-        font-size: 1rem; 
-        display: inline-block;}
+    .formulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .formularioContenedorBoton{
+        background-color: rgb(202, 99, 164);
+        
+    }
     
     ::placeholder
-    {color: rgb(0, 0, 0);}
+    {color: rgb(0, 0, 0) !important; 
+    }
     
     .footer
     {color: rgb(255, 255, 255);
@@ -191,8 +197,6 @@ box-sizing: border-box
         text-align: center;
         font-size: 1rem;
         margin-top: 2rem;
-    
-        
     }
     
     .iconos
