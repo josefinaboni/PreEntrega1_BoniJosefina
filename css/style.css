@@ -28,7 +28,6 @@ box-sizing: border-box
     
     .contenedorTitulo
     { color: rgb(202, 99, 164); 
-        font-size: 3rem; 
         text-align: center;
         display: flex;
         justify-content: center;
@@ -41,22 +40,34 @@ box-sizing: border-box
         background-position: center;
      
     }
-    .titulo
+    .contenedorTitulo h1
      {font-weight: 300;
-        
-        padding: 8rem 
+        padding: 8rem;
+        font-size: 50px; 
        }
-       .contenedorTextoIndex
+     .contenedorTextoIndex
     {color: rgb(202, 99, 164);
         text-align: center;
          
         }
-        .contenedorTextoIndex h2
+    .contenedorTextoIndex h2
         {font-weight: 300;
-        font-size: 1,5rem;
-        
-        
+        font-size: 20px;
     }
+    .tarjetas{
+        height: auto !important;
+    }
+
+    .tarjetas img { 
+        width: 100%;
+        object-fit: cover;
+    }
+    
+    .tarjetas h3{ 
+        color: rgb(202, 99, 164);
+        font-weight: 700;
+    }
+
     .containterPrimerCaja{
         margin-top: 2rem;
         margin-bottom: 2rem;
@@ -102,38 +113,28 @@ box-sizing: border-box
          
         }
     .contenedorTexto h2
-        {font-size: 1rem;
+        {font-size: 20px;
         font-weight: 700;
         
     }
-
+    
     .contenedorTexto p
     {font-weight: 300;
-    font-size: 1rem;
+    font-size: 15px;
 
     }
-    .contenedorTexto h4
-    {font-weight: 700;
-    font-size: 2rem;
+    .contenedorTexto ul
+    {font-weight: 300;
+    font-size: 15px;
+
+    }
+    .contenedorTexto ol
+    {font-weight: 300;
+    font-size: 15px;
 
     }
    
-    .tarjetas{
-        height: auto !important;
-    }
-
-    .tarjetas img { 
-        width: 100%;
-        
-        object-fit: cover;
-       
-    }
-    
-    .tarjetas h3{ 
-        color: rgb(202, 99, 164);
-        font-weight: 700;
-    }
-
+   
     .contenedorVideo{
         padding-top: 1rem;
         padding-bottom: 1rem;
@@ -157,7 +158,7 @@ box-sizing: border-box
 
     }
     .contenedorTextoNosotros h3 {
-        font-size: 1,5rem; 
+        font-size: 15px; 
         font-weight: 200;
     }
 
@@ -189,16 +190,21 @@ box-sizing: border-box
         height: 50vh;
     }
     
-    
     .textoGaleria{
        margin-top: 3rem;
+       align-items: center;;
+       justify-content: center;
     }
     .textoGaleria p{
         color: rgb(202, 99, 164);
-        font-size: 1,5rem;
+        font-size: 20px;
         font-weight: 700;
     }
-    
+    .contenedorTexto h4
+    {font-weight: 700;
+    font-size: 30px;
+    }
+   
     .formulario{
         display: flex;
         flex-direction: column;
@@ -217,17 +223,18 @@ box-sizing: border-box
     .footer
     {color: rgb(255, 255, 255);
         background-color: rgb(180, 226, 247);
-        font-size: 1,5rem;
         height: auto;
         width: 100%;
-        text-align: center;
         font-size: 1rem;
         margin-top: 2rem;
     }
-    
+   .mapa{
+    width: 400px;
+    height:450px; 
+   }
     .iconos
      { color: rgb(202, 99, 164); 
-        font-size: 4rem;
+        font-size: 60px;
          display:inline-block; 
         align-items: center;
      padding: 1rem;
@@ -248,3 +255,64 @@ box-sizing: border-box
         align-items:center;
      }
    
+@media screen and (min-width: 0px) and (max-width:768px)  {
+    .contenedorTitulo
+    { height: 20vh;
+    }
+    .contenedorTitulo h1
+     {font-weight: 300;
+        padding: 8rem;
+        font-size: 25px; 
+       }
+
+    .contenedorTextoIndex h2
+    {font-size: 15px;
+    }
+    .columnaIzquierda{ 
+        height: 20vh;
+       }
+
+    .columnaDerecha{
+        height: 20vh;
+       }
+    .contenedorTexto h2
+        {font-size: 9px;
+        font-weight: 700;
+    }
+    
+    .contenedorTexto p
+    {font-weight: 300;
+    font-size: 8px;
+    }
+
+    .contenedorTexto ul
+    {font-weight: 300;
+    font-size: 8px;
+    }
+
+    .contenedorTexto ol
+    {font-weight: 300;
+    font-size: 8px;
+    }
+    .contenedorTextoNosotros h3 
+    {font-size: 10px; 
+    font-weight: 200;
+    }
+    .textoGaleria p
+    {font-size: 10px;
+    }
+
+    .contenedorTexto h4
+    {font-weight: 700;
+    font-size: 20px;
+    }
+   
+    .mapa
+    { width: 200px;
+    height:200px; 
+    }
+    .iconos
+    {font-size: 50px;
+    }
+} 
+
