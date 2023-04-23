@@ -1,0 +1,48 @@
+main {
+    .contenedorTitulo {
+        color: $colorTexto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+        margin-bottom: 1rem;
+        background-image: url(../assets/img/fondo\ titulo\ op.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+
+        h1 {
+            font-weight: 300;
+            padding: 8rem;
+            font-size: $tamanoTitulo;
+
+        }
+    }
+
+    .contenedorTextoIndex {
+        color: $colorTexto;
+        text-align: center;
+
+        h2 {
+            font-weight: 300;
+            font-size: $tamanoTextoSecundario;
+
+        }
+    }
+
+    .tarjetas {
+        height: auto !important;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        h3 {
+            color: $colorTexto;
+            font-weight: 700;
+        }
+    }
+}
