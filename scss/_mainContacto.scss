@@ -1,0 +1,44 @@
+main{ 
+    
+    div.contenedorTitulo {
+        color: $colorTexto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+        margin-bottom: 1rem;
+        background-image: url(../assets/img/fondo\ titulo\ op.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        h1 {
+            font-weight: 300;
+            padding: 8rem;
+            font-size: $tamanoTitulo;
+        }
+    }
+    div.contenedorTexto {
+        color: $colorTexto;
+        text-align: center;
+
+        h2 {
+            font-size: $tituloCards;
+            font-weight: 700;
+        }
+    }
+       form.formulario {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            ::placeholder {
+                color: rgb(0, 0, 0) !important;
+            }
+            .formularioContenedorBoton {
+                background-color: rgb(202, 99, 164);
+            
+            }
+        } 
+}

@@ -1,27 +1,27 @@
 main {
-    .contenedorTitulo {
-        color: $colorTexto;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 35vh;
-        margin-bottom: 1rem;
-        background-image: url(../assets/img/fondo\ titulo\ op.JPG);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
+        div.contenedorTitulo {
+            color: $colorTexto;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35vh;
+            margin-bottom: 1rem;
+            background-image: url(../assets/img/fondo\ titulo\ op.JPG);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
 
-        h1 {
-            font-weight: 300;
-            padding: 8rem;
-            font-size: $tamanoTitulo;
+            h1 {
+                font-weight: 300;
+                padding: 8rem;
+                font-size: $tamanoTitulo;
 
+            }
         }
-    }
 
-    .contenedorTextoIndex {
+    div.contenedorTextoIndex {
         color: $colorTexto;
         text-align: center;
 
@@ -32,17 +32,17 @@ main {
         }
     }
 
-    .tarjetas {
-        height: auto !important;
+        div.tarjetas {
+            height: auto !important;
 
-        img {
-            width: 100%;
-            object-fit: cover;
-        }
+            img {
+                width: 100%;
+                object-fit: cover;
+            }
 
-        h3 {
-            color: $colorTexto;
-            font-weight: 700;
+            h3 {
+                color: $colorTexto;
+                font-weight: 700;
+            }
         }
-    }
 }

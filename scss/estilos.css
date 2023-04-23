@@ -24,7 +24,7 @@
   font-size: 1, 75rem;
 }
 
-main .contenedorTitulo {
+main div.contenedorTitulo {
   color: rgb(202, 99, 164);
   text-align: center;
   display: flex;
@@ -38,28 +38,28 @@ main .contenedorTitulo {
   background-attachment: fixed;
   background-position: center;
 }
-main .contenedorTitulo h1 {
+main div.contenedorTitulo h1 {
   font-weight: 300;
   padding: 8rem;
   font-size: 50px;
 }
-main .contenedorTextoIndex {
+main div.contenedorTextoIndex {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main .contenedorTextoIndex h2 {
+main div.contenedorTextoIndex h2 {
   font-weight: 300;
   font-size: 20px;
 }
-main .tarjetas {
+main div.tarjetas {
   height: auto !important;
 }
-main .tarjetas img {
+main div.tarjetas img {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
-main .tarjetas h3 {
+main div.tarjetas h3 {
   color: rgb(202, 99, 164);
   font-weight: 700;
 }
@@ -78,18 +78,23 @@ main div .contenedorTitulo {
   background-attachment: fixed;
   background-position: center;
 }
-main .containterPrimerCaja {
+main div .contenedorTitulo h1 {
+  font-weight: 300;
+  padding: 8rem;
+  font-size: 50px;
+}
+main section.containterPrimerCaja {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-main .containterPrimerCaja .columnaIzquierda {
+main section.containterPrimerCaja div .columnaIzquierda {
   background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-main .containterPrimerCaja .columnaDerecha {
+main section.containterPrimerCaja div.columnaDerecha {
   height: 35vh;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -97,26 +102,26 @@ main .containterPrimerCaja .columnaDerecha {
   align-items: center;
   justify-content: center;
 }
-main .containterPrimerCaja .contenedorTexto {
+main section.containterPrimerCaja .contenedorTexto {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main .containterPrimerCaja .contenedorTexto h2 {
-  font-size: 20px;
+main section.containterPrimerCaja .contenedorTexto h2 {
+  font-size: 25px;
   font-weight: 700;
 }
-main .containterPrimerCaja .contenedorTexto p {
+main section.containterPrimerCaja .contenedorTexto p {
   font-weight: 300;
   font-size: 15px;
 }
-main .columnaIzquierdaSegundo {
+main div.columnaIzquierdaSegundo {
   background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-main .columnaDerecha {
+main div.columnaDerecha {
   height: 35vh;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -129,25 +134,25 @@ main .contenedorTexto {
   text-align: center;
 }
 main .contenedorTexto h2 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: 700;
 }
 main .contenedorTexto ul {
   font-weight: 300;
   font-size: 15px;
 }
-main .containterPrimerCaja {
+main section.containterPrimerCaja {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-main .containterPrimerCaja .columnaIzquierdaTercer {
+main section.containterPrimerCaja div.columnaIzquierdaTercer {
   background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-main .containterPrimerCaja .columnaDerecha {
+main section.containterPrimerCaja div.columnaDerecha {
   height: 35vh;
   background-color: rgb(255, 255, 255);
   display: flex;
@@ -155,13 +160,198 @@ main .containterPrimerCaja .columnaDerecha {
   align-items: center;
   justify-content: center;
 }
-main .containterPrimerCaja .columnaDerecha .contenedorTexto {
+main section.containterPrimerCaja div.columnaDerecha .contenedorTexto {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main .containterPrimerCaja .columnaDerecha .contenedorTexto ol {
+main section.containterPrimerCaja div.columnaDerecha .contenedorTexto h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+main section.containterPrimerCaja div.columnaDerecha .contenedorTexto ol {
   font-weight: 300;
   font-size: 15px;
+}
+
+main div.contenedorTitulo {
+  color: rgb(202, 99, 164);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  margin-bottom: 1rem;
+  background-image: url(../assets/img/fondo\ titulo\ op.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+main div.contenedorTitulo h1 {
+  font-weight: 300;
+  padding: 8rem;
+  font-size: 50px;
+}
+main div.contenedorVideo {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-left: 1rem;
+  background-color: rgb(250, 250, 250);
+}
+main div.contenedorVideo video {
+  height: 35vh;
+  width: 100%;
+}
+main div.contenedorTextoNosotros {
+  color: rgb(202, 99, 164);
+  background-color: rgb(253, 253, 253);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+main div.contenedorTextoNosotros h3 {
+  font-size: 20px;
+  font-weight: 200;
+}
+main div.textoGaleria {
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+main div.textoGaleria p {
+  color: rgb(202, 99, 164);
+  font-size: 25px;
+  font-weight: 700;
+}
+main div.galeriaNosotros {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+main div.galeriaNosotros .imagenes {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 1rem;
+}
+main div.galeriaNosotros .imagenes img {
+  width: 100%;
+  height: 40vh;
+}
+main div.galeriaNosotros .videoNosotros {
+  display: flex;
+  flex-direction: column;
+}
+main div.galeriaNosotros .videoNosotros video {
+  width: 100%;
+  height: 50vh;
+}
+
+main div.contenedorTitulo {
+  color: rgb(202, 99, 164);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  margin-bottom: 1rem;
+  background-image: url(../assets/img/fondo\ titulo\ op.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+main div.contenedorTitulo h1 {
+  font-weight: 300;
+  padding: 8rem;
+  font-size: 50px;
+}
+main div.contenedorTextoIndex {
+  color: rgb(202, 99, 164);
+  text-align: center;
+}
+main div.contenedorTextoIndex h2 {
+  font-weight: 300;
+  font-size: 20px;
+}
+main div.textoGaleria {
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+main div.textoGaleria p {
+  color: rgb(202, 99, 164);
+  font-size: 25px;
+  font-weight: 700;
+}
+main div.contenedorGaleria {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  justify-content: center;
+}
+main div.contenedorGaleria .imagenes {
+  background-color: rgb(255, 255, 255);
+  padding: 1rem 2rem 1rem 2rem;
+  margin: 1rem;
+}
+main div.contenedorGaleria .imagenes img {
+  width: 100%;
+  height: 40vh;
+}
+main div.contenedorTexto h4 {
+  font-weight: 700;
+  font-size: 25px;
+}
+main div.contenedorTexto .mapa {
+  width: 400px;
+  height: 450px;
+}
+
+main div.contenedorTitulo {
+  color: rgb(202, 99, 164);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  margin-bottom: 1rem;
+  background-image: url(../assets/img/fondo\ titulo\ op.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+main div.contenedorTitulo h1 {
+  font-weight: 300;
+  padding: 8rem;
+  font-size: 50px;
+}
+main div.contenedorTexto {
+  color: rgb(202, 99, 164);
+  text-align: center;
+}
+main div.contenedorTexto h2 {
+  font-size: 25px;
+  font-weight: 700;
+}
+main form.formulario {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main form.formulario ::-moz-placeholder {
+  color: rgb(0, 0, 0) !important;
+}
+main form.formulario ::placeholder {
+  color: rgb(0, 0, 0) !important;
+}
+main form.formulario .formularioContenedorBoton {
+  background-color: rgb(202, 99, 164);
 }
 
 .footer {
@@ -184,202 +374,6 @@ main .containterPrimerCaja .columnaDerecha .contenedorTexto ol {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-/*
-.containterPrimerCaja {
-    margin-top: 2rem;
-    margin-bottom: 2rem;
-}
-
-.columnaIzquierda {
-    background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
-    height: 35vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.columnaDerecha {
-    height: 35vh;
-    background-color: rgb(255, 255, 255);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-.columnaIzquierdaSegundo {
-    background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
-    height: 35vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-.columnaIzquierdaTercer {
-    background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
-    height: 35vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-*/
-/*
-.contenedorTexto {
-    color: rgb(202, 99, 164);
-    text-align: center;
-
-}
-
-.contenedorTexto h2 {
-    font-size: 20px;
-    font-weight: 700;
-
-}
-
-.contenedorTexto p {
-    font-weight: 300;
-    font-size: 15px;
-
-}
-.contenedorTexto ul {
-    font-weight: 300;
-    font-size: 15px;
-
-}
-.contenedorTexto ol {
-    font-weight: 300;
-    font-size: 15px;
-
-}
-
-*/
-.galeriaNosotros {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.contenedorVideo {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-left: 1rem;
-  background-color: rgb(250, 250, 250);
-}
-
-.contenedorVideo video {
-  height: 35vh;
-  width: 100%;
-}
-
-.contenedorTextoNosotros {
-  color: rgb(202, 99, 164);
-  background-color: rgb(253, 253, 253);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-}
-
-.contenedorTextoNosotros h3 {
-  font-size: 15px;
-  font-weight: 200;
-}
-
-.contenedorGaleria {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: center;
-  justify-content: center;
-}
-
-.imagenes {
-  background-color: rgb(255, 255, 255);
-  padding: 1rem 2rem 1rem 2rem;
-  margin: 1rem;
-}
-
-.imagenes img {
-  width: 100%;
-  height: 40vh;
-}
-
-.videoNosotros {
-  display: flex;
-  flex-direction: column;
-}
-
-.videoNosotros video {
-  width: 100%;
-  height: 50vh;
-}
-
-.textoGaleria {
-  margin-top: 3rem;
-  align-items: center;
-  justify-content: center;
-}
-
-.textoGaleria p {
-  color: rgb(202, 99, 164);
-  font-size: 20px;
-  font-weight: 700;
-}
-
-.contenedorTexto h4 {
-  font-weight: 700;
-  font-size: 30px;
-}
-
-.formulario {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.formularioContenedorBoton {
-  background-color: rgb(202, 99, 164);
-}
-
-::-moz-placeholder {
-  color: rgb(0, 0, 0) !important;
-}
-
-::placeholder {
-  color: rgb(0, 0, 0) !important;
-}
-
-/*
-.footer {
-    color: rgb(255, 255, 255);
-    background-color: rgb(180, 226, 247);
-    height: auto;
-    width: 100%;
-    font-size: 1rem;
-    margin-top: 2rem;
-}
-
-.iconos {
-    color: rgb(202, 99, 164);
-    font-size: 60px;
-    display: inline-block;
-    align-items: center;
-    padding: 1rem;
-}
-.contenedorCreditos {
-    padding-top: 1rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-*/
-.mapa {
-  width: 400px;
-  height: 450px;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {

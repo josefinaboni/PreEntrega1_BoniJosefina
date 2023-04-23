@@ -1,107 +1,130 @@
 main {
-    div{
-    .contenedorTitulo {
-        color: $colorTexto;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 35vh;
-        margin-bottom: 1rem;
-        background-image: url(../assets/img/fondo\ titulo\ op.JPG);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-    }
-    }
-   
-    .containterPrimerCaja {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
-        .columnaIzquierda {
-            background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
-            height: 35vh;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-        
-        .columnaDerecha  {
-            height: 35vh;
-            background-color: rgb(255, 255, 255);
+    div .contenedorTitulo {
+            color: $colorTexto;
+            text-align: center;
             display: flex;
-            flex-direction: column;
-            align-items: center;
             justify-content: center;
-        } 
-        .contenedorTexto {
-            color: $colorTexto;
-            text-align: center;
-            h2 {
-                font-size: $tituloCards;
-                font-weight: 700;
-            }
-            p {
+            align-items: center;
+            height: 35vh;
+            margin-bottom: 1rem;
+            background-image: url(../assets/img/fondo\ titulo\ op.JPG);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+            h1 {
                 font-weight: 300;
-                font-size: $tamanoTextoCards;
+                padding: 8rem;
+                font-size: $tamanoTitulo;
+
             }
-        } 
-    }
-    .columnaIzquierdaSegundo {
-        background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
-        height: 35vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .columnaDerecha  {
-        height: 35vh;
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    } 
-    .contenedorTexto {
-        color: $colorTexto;
-        text-align: center;
-        h2 {
-            font-size: $tituloCards;
-            font-weight: 700;
         }
-        ul {
-            font-weight: 300;
-            font-size: $tamanoTextoCards;
-        }
-    }
-    .containterPrimerCaja {
+    
+    section.containterPrimerCaja {
         margin-top: 2rem;
         margin-bottom: 2rem;
-    .columnaIzquierdaTercer {
-        background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
-        height: 35vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
-    .columnaDerecha  {
-        height: 35vh;
-        background-color: rgb(255, 255, 255);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        .contenedorTexto {
-            color: $colorTexto;
-            text-align: center;
-            ol {
+        
+    
+           div .columnaIzquierda {
+                background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
+                height: 35vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+    
+            div.columnaDerecha {
+                height: 35vh;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+    
+            .contenedorTexto {
+                color: $colorTexto;
+                text-align: center;
+    
+                h2 {
+                    font-size: $tituloCards;
+                    font-weight: 700;
+                }
+    
+                p {
+                    font-weight: 300;
+                    font-size: $tamanoTextoCards;
+                }
+            }
+        }
+
+            div.columnaIzquierdaSegundo {
+                background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
+                height: 35vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            div.columnaDerecha {
+                height: 35vh;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+
+            .contenedorTexto {
+                color: $colorTexto;
+                text-align: center;
+
+                h2 {
+                    font-size: $tituloCards;
+                    font-weight: 700;
+                }
+
+            ul {
                 font-weight: 300;
                 font-size: $tamanoTextoCards;
             }
-        } 
-    
-    }
+        }
 
-    }   
-}
+    section.containterPrimerCaja {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+
+            div.columnaIzquierdaTercer {
+                background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
+                height: 35vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+
+            div.columnaDerecha {
+                height: 35vh;
+                background-color: rgb(255, 255, 255);
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .contenedorTexto {
+                    color: $colorTexto;
+                    text-align: center;
+                    h2 {
+                        font-size: $tituloCards;
+                        font-weight: 700;
+                    }
+
+                    ol {
+                        font-weight: 300;
+                        font-size: $tamanoTextoCards;
+                    }
+                }
+
+            }
+
+        }
+    }
