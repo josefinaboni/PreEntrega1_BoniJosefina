@@ -1,7 +1,18 @@
 $tipografia: 'Nunito', sans-serif;
-$fondoBody: rgb(229, 242, 230);
-$tamanoTitulo: 50px;
-$tamanoTextoSecundario: 20px;
-$tituloCards: 25px;
-$tamanoTextoCards: 15px;
-$colorTexto: rgb(202, 99, 164);
+$fondo-body: rgb(229, 242, 230);
+$fondo-cards: rgb(255, 255, 255);
+$tamano-titulo: 50px;
+$tamano-texto-secundario: 20px;
+$titulo-cards: 25px;
+$tamano-texto-cards: 15px;
+$color-texto: rgb(202, 99, 164);
+
+
+$fuentes:(
+    thin:200,
+    light:300,
+    regular:400,
+    medium:500,
+    bold:700,
+    black:900
+);

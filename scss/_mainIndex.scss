@@ -1,6 +1,6 @@
 main {
         div.contenedorTitulo {
-            color: $colorTexto;
+            color: $color-texto;
             text-align: center;
             display: flex;
             justify-content: center;
@@ -14,20 +14,20 @@ main {
             background-position: center;
 
             h1 {
-                font-weight: 300;
+                font-weight: map-get($fuentes, light);
                 padding: 8rem;
-                font-size: $tamanoTitulo;
+                font-size: $tamano-titulo;
 
             }
         }
 
     div.contenedorTextoIndex {
-        color: $colorTexto;
+        color: $color-texto;
         text-align: center;
 
         h2 {
-            font-weight: 300;
-            font-size: $tamanoTextoSecundario;
+            font-weight: map-get($fuentes, light);
+            font-size: $tamano-texto-secundario;
 
         }
     }
@@ -41,8 +41,29 @@ main {
             }
 
             h3 {
-                color: $colorTexto;
-                font-weight: 700;
+                color: $color-texto;
+                font-weight: map-get($fuentes, bold);
             }
         }
+}
+
+@media screen and (min-width: 0px) and (max-width:768px)  {
+    main{
+        section{
+            div.contenedorTitulo{ 
+                height: 20vh;
+               h1{
+                font-weight: map-get($fuentes, light);
+                padding: 8rem;
+                font-size: 25px; 
+                }
+
+            }
+        }
+        div.contenedorTextoIndex {
+            h2{
+                font-size: 15px /*esto no se aplica. No se x1*/
+            }
+        }
+    }
 }

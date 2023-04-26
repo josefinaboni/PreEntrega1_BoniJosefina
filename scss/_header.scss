@@ -4,11 +4,33 @@
     z-index: 1020;
     top: 0;
     bottom: 0;
+    
 
     .navbar-light .navbar-nav .linkNav {
-        color: rgb(202, 99, 164);
+        color: $color-texto;
         text-decoration: none;
         font-weight: 800;
         font-size: 1, 75rem;
+    }
+    div.contenedorTitulo {
+        color: $color-texto;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35vh;
+        margin-bottom: 1rem;
+        background-image: url(../assets/img/fondo\ titulo\ op.JPG);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+
+        h1 {
+            font-weight: 300;
+            padding: 8rem;
+            font-size: $tamano-titulo;
+
+        }
     }
 }

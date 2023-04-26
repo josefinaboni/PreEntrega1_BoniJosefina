@@ -1,7 +1,7 @@
 main{ 
     
     div.contenedorTitulo {
-        color: $colorTexto;
+        color: $color-texto;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -14,9 +14,9 @@ main{
         background-attachment: fixed;
         background-position: center;
         h1 {
-            font-weight: 300;
+            font-weight: map-get($fuentes, light);
             padding: 8rem;
-            font-size: $tamanoTitulo;
+            font-size: $tamano-titulo;
         }
     }
         div.contenedorVideo {
@@ -31,7 +31,7 @@ main{
             }
         }  
     div.contenedorTextoNosotros {
-        color: $colorTexto;
+        color: $color-texto;
         background-color: rgb(253, 253, 253);
         text-align: center;
         display: flex;
@@ -39,8 +39,8 @@ main{
         align-items: center;
         height: auto;
         h3 {
-            font-size: $tamanoTextoSecundario;
-            font-weight: 200;
+            font-size: $tamano-texto-secundario;
+            font-weight: map-get($fuentes, thin)
         }
     }  
     div.textoGaleria {
@@ -48,9 +48,9 @@ main{
         align-items: center;
         justify-content: center;
         p {
-            color: $colorTexto;
-            font-size: $tituloCards;
-            font-weight: 700;
+            color: $color-texto;
+            font-size: $titulo-cards;
+            font-weight: map-get($fuentes, bold);
         }
     }  
     div.galeriaNosotros {

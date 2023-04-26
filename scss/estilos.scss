@@ -1,5 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,200&display=swap');
+@import "_font.scss";
 @import "_variables.scss";
+@import "_mixins.scss";
+@import "_reset.scss";
 @import "_body.scss";
 @import "_header.scss";
 @import "_mainIndex.scss";
@@ -9,69 +11,84 @@
 @import "_mainContacto.scss";
 @import "_footer.scss";
 
-@media screen and (min-width: 0px) and (max-width:768px) {
-    .contenedorTitulo {
-        height: 20vh;
-    }
 
-    .contenedorTitulo h1 {
-        font-weight: 300;
+@media screen and (min-width: 0px) and (max-width:768px)  {
+    main{
+        section{
+            div.contenedorTitulo{ 
+                height: 20vh;
+               h1{
+                font-weight: 300;
+                padding: 8rem;
+                font-size: 25px; 
+                }
+
+            }
+        }
+        div.contenedorTextoIndex {
+            h2{
+                font-size: 15px;
+            }
+        }
+    }
+    
+    .contenedorTitulo
+    { height: 20vh;
+    }
+    .contenedorTitulo h1
+     {font-weight: 300;
         padding: 8rem;
-        font-size: 25px;
-    }
+        font-size: 25px; 
+       }
 
-    .contenedorTextoIndex h2 {
-        font-size: 15px;
+    .contenedorTextoIndex h2
+    {font-size: 15px;
     }
-
-    .columnaIzquierda {
+    
+    .columnaIzquierda{ 
         height: 20vh;
-    }
+       }
 
-    .columnaDerecha {
+    .columnaDerecha{
         height: 20vh;
-    }
-
-    .contenedorTexto h2 {
-        font-size: 9px;
+       }
+    .contenedorTexto h2
+        {font-size: 9px;
         font-weight: 700;
     }
-
-    .contenedorTexto p {
-        font-weight: 300;
-        font-size: 8px;
+    
+    .contenedorTexto p
+    {font-weight: 300;
+    font-size: 8px;
     }
 
-    .contenedorTexto ul {
-        font-weight: 300;
-        font-size: 8px;
+    .contenedorTexto ul
+    {font-weight: 300;
+    font-size: 8px;
     }
 
-    .contenedorTexto ol {
-        font-weight: 300;
-        font-size: 8px;
+    .contenedorTexto ol
+    {font-weight: 300;
+    font-size: 8px;
+    }
+    .contenedorTextoNosotros h3 
+    {font-size: 10px; 
+    font-weight: 200;
+    }
+    .textoGaleria p
+    {font-size: 10px;
     }
 
-    .contenedorTextoNosotros h3 {
-        font-size: 10px;
-        font-weight: 200;
+    .contenedorTexto h4
+    {font-weight: 700;
+    font-size: 20px;
     }
-
-    .textoGaleria p {
-        font-size: 10px;
+   
+    .mapa
+    { width: 200px;
+    height:200px; 
     }
-
-    .contenedorTexto h4 {
-        font-weight: 700;
-        font-size: 20px;
+    .iconos
+    {font-size: 50px;
     }
-
-    .mapa {
-        width: 200px;
-        height: 200px;
-    }
-
-    .iconos {
-        font-size: 50px;
-    }
-}
+} 

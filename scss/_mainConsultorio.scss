@@ -1,7 +1,7 @@
 main{ 
     
     div.contenedorTitulo {
-        color: $colorTexto;
+        color: $color-texto;
         text-align: center;
         display: flex;
         justify-content: center;
@@ -14,19 +14,19 @@ main{
         background-attachment: fixed;
         background-position: center;
         h1 {
-            font-weight: 300;
+            font-weight: map-get($fuentes, light);
             padding: 8rem;
-            font-size: $tamanoTitulo;
+            font-size: $tamano-titulo;
 
         }
     }
 div.contenedorTextoIndex {
-    color: $colorTexto;
+    color: $color-texto;
     text-align: center;
 
     h2 {
-        font-weight: 300;
-        font-size: $tamanoTextoSecundario;
+        font-weight: map-get($fuentes, light);
+        font-size: $tamano-texto-secundario;
 
     }
 }   
@@ -35,9 +35,9 @@ div.textoGaleria {
     align-items: center;
     justify-content: center;
     p {
-        color: $colorTexto;
-        font-size: $tituloCards;
-        font-weight: 700;
+        color: $color-texto;
+        font-size: $titulo-cards;
+        font-weight: map-get($fuentes, bold);
     }
 } 
 div.contenedorGaleria {
@@ -58,12 +58,27 @@ div.contenedorGaleria {
 }
 div.contenedorTexto {
     h4 {
-        font-weight: 700;
-        font-size: $tituloCards;
+        font-weight: map-get($fuentes, bold);
+        font-size: $titulo-cards;
         }
     .mapa {
         width: 400px;
         height: 450px;
     }
 }
+}
+
+
+@media screen and (min-width: 0px) and (max-width:768px) {
+    .contenedorTitulo {
+        height: 20vh;
+        h1 {
+            font-weight: map-get($fuentes, light);
+            padding: 8rem;
+            font-size: 25px;
+        }
+    }
+    .contenedorTextoIndex h2 {
+        font-size: 15px;
+    }
 }

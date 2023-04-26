@@ -1,4 +1,23 @@
-@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,200&display=swap");
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,200&display=swap"); /*este mixin es posible, pero no es la forma optima de usarlo, porque no le paso 
+ningun modificador, entonces es recomendable en este caso usar extend*/
+/*ujuustify tiene un valor por defecto que es un variable, si cuando llamamos al mixins no le pasamos ningun valor toamra el por defecto.*/
+/*
+@mixin flexbox($justificacion,$alineacion,$direction,$ancho,$alto,$borde:1px solid black){
+    display:flex;
+    justify-content:$justificacion;
+    align-items: $alineacion;
+    flex-direction: $direction;
+    width:$ancho;
+    height:$alto;
+
+}
+*/
+/*ahora este mixin recibe un valor, 
+en programación es lo que se llama una funcion
+yo defino una porcion de codigo y luego la llamo cuando la necesito
+en este caso esta recibiendo una variable que solo existe localmente en esta funcion(no es una variable global)*/
+/*ver este ejemplo cuando veamos condicionales*/
 * {
   margin: 0;
   padding: 0;
@@ -22,6 +41,25 @@
   text-decoration: none;
   font-weight: 800;
   font-size: 1, 75rem;
+}
+.header div.contenedorTitulo {
+  color: rgb(202, 99, 164);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 35vh;
+  margin-bottom: 1rem;
+  background-image: url(../assets/img/fondo\ titulo\ op.JPG);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+.header div.contenedorTitulo h1 {
+  font-weight: 300;
+  padding: 8rem;
+  font-size: 50px;
 }
 
 main div.contenedorTitulo {
@@ -63,7 +101,20 @@ main div.tarjetas h3 {
   font-weight: 700;
 }
 
-main div .contenedorTitulo {
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  main section div.contenedorTitulo {
+    height: 20vh;
+  }
+  main section div.contenedorTitulo h1 {
+    font-weight: 300;
+    padding: 8rem;
+    font-size: 25px;
+  }
+  main div.contenedorTextoIndex h2 {
+    font-size: 15px;
+  }
+}
+main div.contenedorTitulo {
   color: rgb(202, 99, 164);
   text-align: center;
   display: flex;
@@ -77,7 +128,7 @@ main div .contenedorTitulo {
   background-attachment: fixed;
   background-position: center;
 }
-main div .contenedorTitulo h1 {
+main div.contenedorTitulo h1 {
   font-weight: 300;
   padding: 8rem;
   font-size: 50px;
@@ -86,7 +137,7 @@ main section.containterPrimerCaja {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-main section.containterPrimerCaja div .columnaIzquierda {
+main section.containterPrimerCaja div.columnaIzquierda, main section.containterPrimerCaja div.columnaIzquierdaTercer {
   background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
   height: 35vh;
   background-repeat: no-repeat;
@@ -94,12 +145,12 @@ main section.containterPrimerCaja div .columnaIzquierda {
   background-position: center;
 }
 main section.containterPrimerCaja div.columnaDerecha {
-  height: 35vh;
   background-color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 35vh;
 }
 main section.containterPrimerCaja .contenedorTexto {
   color: rgb(202, 99, 164);
@@ -121,12 +172,12 @@ main div.columnaIzquierdaSegundo {
   background-position: center;
 }
 main div.columnaDerecha {
-  height: 35vh;
   background-color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 35vh;
 }
 main .contenedorTexto {
   color: rgb(202, 99, 164);
@@ -146,18 +197,14 @@ main section.containterPrimerCaja {
 }
 main section.containterPrimerCaja div.columnaIzquierdaTercer {
   background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
-  height: 35vh;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
 }
 main section.containterPrimerCaja div.columnaDerecha {
-  height: 35vh;
   background-color: rgb(255, 255, 255);
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 35vh;
 }
 main section.containterPrimerCaja div.columnaDerecha .contenedorTexto {
   color: rgb(202, 99, 164);
@@ -310,6 +357,19 @@ main div.contenedorTexto .mapa {
   height: 450px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .contenedorTitulo {
+    height: 20vh;
+  }
+  .contenedorTitulo h1 {
+    font-weight: 300;
+    padding: 8rem;
+    font-size: 25px;
+  }
+  .contenedorTextoIndex h2 {
+    font-size: 15px;
+  }
+}
 main div.contenedorTitulo {
   color: rgb(202, 99, 164);
   text-align: center;
@@ -373,6 +433,17 @@ main form.formulario .formularioContenedorBoton {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
+  main section div.contenedorTitulo {
+    height: 20vh;
+  }
+  main section div.contenedorTitulo h1 {
+    font-weight: 300;
+    padding: 8rem;
+    font-size: 25px;
+  }
+  main div.contenedorTextoIndex h2 {
+    font-size: 15px;
+  }
   .contenedorTitulo {
     height: 20vh;
   }
@@ -384,7 +455,7 @@ main form.formulario .formularioContenedorBoton {
   .contenedorTextoIndex h2 {
     font-size: 15px;
   }
-  .columnaIzquierda {
+  .columnaIzquierda, main section.containterPrimerCaja div.columnaIzquierdaTercer {
     height: 20vh;
   }
   .columnaDerecha {
