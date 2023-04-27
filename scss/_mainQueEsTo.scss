@@ -1,22 +1,21 @@
 main {
-    div.contenedorTitulo {
-            color: $color-texto;
+    div.contenedorTituloQue {
+            color: $color-titulo;
             text-align: center;
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 35vh;
+            height: 40vh;
             margin-bottom: 1rem;
-            background-image: url(../assets/img/fondo\ titulo\ op.JPG);
+            background-image: url(../assets/img/fondoQETO2.jpg);
             background-size: cover;
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
             h1 {
-                font-weight: map-get($fuentes, light);
+                font-weight: map-get($fuentes, black);
                 padding: 8rem;
                 font-size: $tamano-titulo;
-
             }
         }
     

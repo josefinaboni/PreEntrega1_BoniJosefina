@@ -1,20 +1,20 @@
 main{ 
     
-    div.contenedorTitulo {
-        color: $color-texto;
+    div.contenedorTituloConsultorio {
+        color: $color-titulo;
         text-align: center;
         display: flex;
         justify-content: center;
         align-items: center;
         height: 35vh;
         margin-bottom: 1rem;
-        background-image: url(../assets/img/fondo\ titulo\ op.JPG);
+        background-image: url(../assets/img/fondoConsultorio.jpg);
         background-size: cover;
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-position: center;
         h1 {
-            font-weight: map-get($fuentes, light);
+            font-weight: map-get($fuentes, black);
             padding: 8rem;
             font-size: $tamano-titulo;
 
@@ -47,7 +47,7 @@ div.contenedorGaleria {
     align-items: center;
     justify-content: center;
     .imagenes {
-        background-color: rgb(255, 255, 255);
+        background-color: $fondo-cards;
         padding: 1rem 2rem 1rem 2rem;
         margin: 1rem;
         img {
