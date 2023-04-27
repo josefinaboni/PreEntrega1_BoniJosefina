@@ -1,5 +1,5 @@
 main {
-    div.contenedorTituloQue {
+    .contenedorTituloQue {
             color: $color-titulo;
             text-align: center;
             display: flex;
@@ -12,6 +12,7 @@ main {
             background-repeat: no-repeat;
             background-attachment: fixed;
             background-position: center;
+            
             h1 {
                 font-weight: map-get($fuentes, black);
                 padding: 8rem;
@@ -19,12 +20,12 @@ main {
             }
         }
     
-    section.containterPrimerCaja {
+    .containterPrimerCaja {
         margin-top: 2rem;
         margin-bottom: 2rem;
         
     
-           div.columnaIzquierda {
+           .columnaIzquierda {
                 background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
                 height: 35vh;
                 background-repeat: no-repeat;
@@ -32,7 +33,7 @@ main {
                 background-position: center;
             }
     
-            div.columnaDerecha {
+            .columnaDerecha {
                 background-color:$fondo-cards;
                 @include flexbox ( center, center, column, 35vh);
             }
@@ -53,7 +54,7 @@ main {
             }
         }
 
-            div.columnaIzquierdaSegundo {
+            .columnaIzquierdaSegundo {
                 background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
                 height: 35vh;
                 background-repeat: no-repeat;
@@ -61,7 +62,7 @@ main {
                 background-position: center;
             }
 
-            div.columnaDerecha {
+            .columnaDerecha {
                 background-color: $fondo-cards;
                 @include flexbox ( center, center, column, 35vh);
             }
@@ -82,17 +83,17 @@ main {
             }
         }
 
-    section.containterPrimerCaja {
+    .containterPrimerCaja {
             margin-top: 2rem;
             margin-bottom: 2rem;
 
-            div.columnaIzquierdaTercer {
+            .columnaIzquierdaTercer {
                 @extend .columnaIzquierda;
                 background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
                 
             }
 
-            div.columnaDerecha {
+            .columnaDerecha {
                 background-color: $fondo-cards;
                 @include flexbox ( center, center, column, 35vh);
 
@@ -114,5 +115,37 @@ main {
 
         }
     }
+
+@media screen and (min-width: 0px) and (max-width:768px)  {
+        main{
+            .contenedorTituloQue{
+                height: 20vh;
+                h1{
+                    font-weight: 300;
+                    padding: 8rem;
+                    font-size: 25px;
+                }  
+            }  
+            .containerPrimerCaja{
+                .columnaIzquierda {
+                    height: 20vh;
+                }
+                .columnaDerecha{
+                    height: 20vh;
+                }
+                .contenedorTexto{
+                    h2{
+                        font-size: 8px;
+                        font-weight: 700;
+                    }
+                    p{
+                        font-weight: 300;
+                        font-size: 6px;
+                    }
+                }
+            }
+        }
+
+}
 
     

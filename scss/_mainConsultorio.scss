@@ -68,17 +68,3 @@ div.contenedorTexto {
 }
 }
 
-
-@media screen and (min-width: 0px) and (max-width:768px) {
-    .contenedorTitulo {
-        height: 20vh;
-        h1 {
-            font-weight: map-get($fuentes, light);
-            padding: 8rem;
-            font-size: 25px;
-        }
-    }
-    .contenedorTextoIndex h2 {
-        font-size: 15px;
-    }
-}

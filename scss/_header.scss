@@ -4,7 +4,10 @@
     z-index: 1020;
     top: 0;
     bottom: 0;
-    
+    .logo{
+        
+        width:(100px) ;
+    }
 
     .navbar-light .navbar-nav .linkNav {
         color: $color-texto;

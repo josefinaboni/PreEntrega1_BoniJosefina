@@ -12,26 +12,14 @@
 @import "_footer.scss";
 
 
-@media screen and (min-width: 0px) and (max-width:768px)  {
-    main{
-        section{
-            div.contenedorTitulo{ 
-                height: 20vh;
-               h1{
-                font-weight: 300;
-                padding: 8rem;
-                font-size: 25px; 
-                }
 
-            }
-        }
-        div.contenedorTextoIndex {
-            h2{
-                font-size: 15px;
-            }
-        }
+    /* ver por que no funciona
+    .logo {
+        width: 50px; 
     }
-    
+    */
+   
+    /*
     .contenedorTitulo
     { height: 20vh;
     }
@@ -40,45 +28,48 @@
         padding: 8rem;
         font-size: 25px; 
        }
+    
 
     .contenedorTextoIndex h2
     {font-size: 15px;
-    }
-    
+    }*/
+    /*medias queries nque es to*/
+
+/*
     .columnaIzquierda{ 
         height: 20vh;
        }
+       
+    .columnaIzquierdaSegundo{
+        height: 20vh;
+    }
+    .columnaIzquierdaTercer{
+        height: 20vh;
+    }
 
     .columnaDerecha{
         height: 20vh;
        }
     .contenedorTexto h2
-        {font-size: 9px;
+        {font-size: 8px;
         font-weight: 700;
     }
     
     .contenedorTexto p
     {font-weight: 300;
-    font-size: 8px;
+    font-size: 6px;
     }
 
     .contenedorTexto ul
     {font-weight: 300;
-    font-size: 8px;
+    font-size: 6px;
     }
 
     .contenedorTexto ol
     {font-weight: 300;
-    font-size: 8px;
+    font-size: 6px;
     }
-    .contenedorTextoNosotros h3 
-    {font-size: 10px; 
-    font-weight: 200;
-    }
-    .textoGaleria p
-    {font-size: 10px;
-    }
-
+    
     .contenedorTexto h4
     {font-weight: 700;
     font-size: 20px;
@@ -91,4 +82,4 @@
     .iconos
     {font-size: 50px;
     }
-} 
+} */

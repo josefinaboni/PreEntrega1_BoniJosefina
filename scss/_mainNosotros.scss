@@ -1,6 +1,6 @@
 main{ 
     
-    div.contenedorTituloNosotros {
+    .contenedorTituloNosotros {
         color: $color-titulo;
         text-align: center;
         display: flex;
@@ -19,7 +19,7 @@ main{
             font-size: $tamano-titulo;
         }
     }
-        div.contenedorVideo {
+        .contenedorVideo {
             padding-top: 1rem;
             padding-bottom: 1rem;
             padding-left: 1rem;
@@ -30,7 +30,7 @@ main{
             
             }
         }  
-    div.contenedorTextoNosotros {
+    .contenedorTextoNosotros {
         color: $color-texto;
         background-color: $fondo-cards;
         text-align: center;
@@ -43,7 +43,7 @@ main{
             font-weight: map-get($fuentes, thin)
         }
     }  
-    div.textoGaleria {
+    .textoGaleria {
         margin-top: 3rem;
         align-items: center;
         justify-content: center;
@@ -53,7 +53,7 @@ main{
             font-weight: map-get($fuentes, bold);
         }
     }  
-    div.galeriaNosotros {
+    .galeriaNosotros {
         @include flexboxSinH ( center, center, column,);
             .imagenes {
                 background-color: $fondo-cards;
@@ -73,4 +73,40 @@ main{
                 }
             }
 }   
+}
+@media screen and (min-width: 0px) and (max-width:768px)  {
+    main{
+        .contenedorTituloNosotros{
+            height: 20vh;
+            h1{
+                font-weight: 300;
+                padding: 8rem;
+                font-size: 25px;
+            }  
+        }
+        .contenedorTextoNosotros {
+            h3 {
+                font-size: 10px; 
+                font-weight: 200;
+            }
+        }
+        .textoGaleria{
+            p{
+                font-size: 8px;
+            }
+
+        }
+        .galeriaNosotros {
+            .imagenes{
+                img{
+                    height: 20vh;
+                }
+            }
+            .videoNosotros{
+                video{
+                    height: 20vh; 
+                }
+        }
+    }
+}
 }

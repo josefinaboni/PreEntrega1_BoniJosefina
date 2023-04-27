@@ -1,5 +1,5 @@
 main {
-        div.contenedorTituloIndex {
+        .contenedorTituloIndex {
             color: $color-titulo;
             text-align: center;
             display: flex;
@@ -21,7 +21,7 @@ main {
             }
         }
 
-    div.contenedorTextoIndex {
+    .contenedorTextoIndex {
         color: $color-texto;
         text-align: center;
 
@@ -49,20 +49,17 @@ main {
 
 @media screen and (min-width: 0px) and (max-width:768px)  {
     main{
-        section{
-            div.contenedorTitulo{ 
-                height: 20vh;
-               h1{
-                font-weight: map-get($fuentes, light);
+        .contenedorTituloIndex {
+            height: 20vh;
+            h1{
+                font-weight: 300;
                 padding: 8rem;
-                font-size: 25px; 
-                }
-
-            }
+                font-size: 25px;
+            }  
         }
-        div.contenedorTextoIndex {
-            h2{
-                font-size: 15px /*esto no se aplica. No se x1*/
+        .contenedorTextoIndex {
+            h2 {
+            font-size: 1px;
             }
         }
     }

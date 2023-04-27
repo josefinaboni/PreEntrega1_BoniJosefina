@@ -17,6 +17,9 @@
   top: 0;
   bottom: 0;
 }
+.header .logo {
+  width: 100px;
+}
 .header .navbar-light .navbar-nav .linkNav {
   color: rgb(202, 99, 164);
   text-decoration: none;
@@ -43,7 +46,7 @@
   font-size: 50px;
 }
 
-main div.contenedorTituloIndex {
+main .contenedorTituloIndex {
   color: rgb(255, 255, 255);
   text-align: center;
   display: flex;
@@ -57,16 +60,16 @@ main div.contenedorTituloIndex {
   background-attachment: fixed;
   background-position: center;
 }
-main div.contenedorTituloIndex h1 {
+main .contenedorTituloIndex h1 {
   font-weight: 900;
   padding: 8rem;
   font-size: 50px;
 }
-main div.contenedorTextoIndex {
+main .contenedorTextoIndex {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main div.contenedorTextoIndex h2 {
+main .contenedorTextoIndex h2 {
   font-weight: 300;
   font-size: 20px;
 }
@@ -84,19 +87,19 @@ main div.tarjetas h3 {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  main section div.contenedorTitulo {
+  main .contenedorTituloIndex {
     height: 20vh;
   }
-  main section div.contenedorTitulo h1 {
+  main .contenedorTituloIndex h1 {
     font-weight: 300;
     padding: 8rem;
     font-size: 25px;
   }
-  main div.contenedorTextoIndex h2 {
-    font-size: 15px;
+  main .contenedorTextoIndex h2 {
+    font-size: 1px;
   }
 }
-main div.contenedorTituloQue {
+main .contenedorTituloQue {
   color: rgb(255, 255, 255);
   text-align: center;
   display: flex;
@@ -110,23 +113,23 @@ main div.contenedorTituloQue {
   background-attachment: fixed;
   background-position: center;
 }
-main div.contenedorTituloQue h1 {
+main .contenedorTituloQue h1 {
   font-weight: 900;
   padding: 8rem;
   font-size: 50px;
 }
-main section.containterPrimerCaja {
+main .containterPrimerCaja {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-main section.containterPrimerCaja div.columnaIzquierda, main section.containterPrimerCaja div.columnaIzquierdaTercer {
+main .containterPrimerCaja .columnaIzquierda, main .containterPrimerCaja .columnaIzquierdaTercer {
   background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-main section.containterPrimerCaja div.columnaDerecha {
+main .containterPrimerCaja .columnaDerecha {
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -134,26 +137,26 @@ main section.containterPrimerCaja div.columnaDerecha {
   flex-direction: column;
   height: 35vh;
 }
-main section.containterPrimerCaja .contenedorTexto {
+main .containterPrimerCaja .contenedorTexto {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main section.containterPrimerCaja .contenedorTexto h2 {
+main .containterPrimerCaja .contenedorTexto h2 {
   font-size: 25px;
   font-weight: 700;
 }
-main section.containterPrimerCaja .contenedorTexto p {
+main .containterPrimerCaja .contenedorTexto p {
   font-weight: 300;
   font-size: 15px;
 }
-main div.columnaIzquierdaSegundo {
+main .columnaIzquierdaSegundo {
   background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-main div.columnaDerecha {
+main .columnaDerecha {
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -173,14 +176,14 @@ main .contenedorTexto ul {
   font-weight: 300;
   font-size: 15px;
 }
-main section.containterPrimerCaja {
+main .containterPrimerCaja {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-main section.containterPrimerCaja div.columnaIzquierdaTercer {
+main .containterPrimerCaja .columnaIzquierdaTercer {
   background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
 }
-main section.containterPrimerCaja div.columnaDerecha {
+main .containterPrimerCaja .columnaDerecha {
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -188,20 +191,44 @@ main section.containterPrimerCaja div.columnaDerecha {
   flex-direction: column;
   height: 35vh;
 }
-main section.containterPrimerCaja div.columnaDerecha .contenedorTexto {
+main .containterPrimerCaja .columnaDerecha .contenedorTexto {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main section.containterPrimerCaja div.columnaDerecha .contenedorTexto h2 {
+main .containterPrimerCaja .columnaDerecha .contenedorTexto h2 {
   font-size: 25px;
   font-weight: 700;
 }
-main section.containterPrimerCaja div.columnaDerecha .contenedorTexto ol {
+main .containterPrimerCaja .columnaDerecha .contenedorTexto ol {
   font-weight: 300;
   font-size: 15px;
 }
 
-main div.contenedorTituloNosotros {
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  main .contenedorTituloQue {
+    height: 20vh;
+  }
+  main .contenedorTituloQue h1 {
+    font-weight: 300;
+    padding: 8rem;
+    font-size: 25px;
+  }
+  main .containerPrimerCaja .columnaIzquierda, main .containerPrimerCaja .containterPrimerCaja .columnaIzquierdaTercer, main .containterPrimerCaja .containerPrimerCaja .columnaIzquierdaTercer {
+    height: 20vh;
+  }
+  main .containerPrimerCaja .columnaDerecha {
+    height: 20vh;
+  }
+  main .containerPrimerCaja .contenedorTexto h2 {
+    font-size: 8px;
+    font-weight: 700;
+  }
+  main .containerPrimerCaja .contenedorTexto p {
+    font-weight: 300;
+    font-size: 6px;
+  }
+}
+main .contenedorTituloNosotros {
   color: rgb(255, 255, 255);
   text-align: center;
   display: flex;
@@ -215,22 +242,22 @@ main div.contenedorTituloNosotros {
   background-attachment: fixed;
   background-position: center;
 }
-main div.contenedorTituloNosotros h1 {
+main .contenedorTituloNosotros h1 {
   font-weight: 900;
   padding: 8rem;
   font-size: 50px;
 }
-main div.contenedorVideo {
+main .contenedorVideo {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   background-color: rgb(255, 255, 255);
 }
-main div.contenedorVideo video {
+main .contenedorVideo video {
   height: 35vh;
   width: 100%;
 }
-main div.contenedorTextoNosotros {
+main .contenedorTextoNosotros {
   color: rgb(202, 99, 164);
   background-color: rgb(255, 255, 255);
   text-align: center;
@@ -239,44 +266,67 @@ main div.contenedorTextoNosotros {
   align-items: center;
   height: auto;
 }
-main div.contenedorTextoNosotros h3 {
+main .contenedorTextoNosotros h3 {
   font-size: 20px;
   font-weight: 200;
 }
-main div.textoGaleria {
+main .textoGaleria {
   margin-top: 3rem;
   align-items: center;
   justify-content: center;
 }
-main div.textoGaleria p {
+main .textoGaleria p {
   color: rgb(202, 99, 164);
   font-size: 25px;
   font-weight: 700;
 }
-main div.galeriaNosotros {
+main .galeriaNosotros {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-main div.galeriaNosotros .imagenes {
+main .galeriaNosotros .imagenes {
   background-color: rgb(255, 255, 255);
   padding: 1rem 2rem 1rem 2rem;
   margin: 1rem;
 }
-main div.galeriaNosotros .imagenes img {
+main .galeriaNosotros .imagenes img {
   width: 100%;
   height: 40vh;
 }
-main div.galeriaNosotros .videoNosotros {
+main .galeriaNosotros .videoNosotros {
   display: flex;
   flex-direction: column;
 }
-main div.galeriaNosotros .videoNosotros video {
+main .galeriaNosotros .videoNosotros video {
   width: 100%;
   height: 50vh;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  main .contenedorTituloNosotros {
+    height: 20vh;
+  }
+  main .contenedorTituloNosotros h1 {
+    font-weight: 300;
+    padding: 8rem;
+    font-size: 25px;
+  }
+  main .contenedorTextoNosotros h3 {
+    font-size: 10px;
+    font-weight: 200;
+  }
+  main .textoGaleria p {
+    font-size: 8px;
+  }
+  main .galeriaNosotros .imagenes img {
+    height: 20vh;
+  }
+  main .galeriaNosotros .videoNosotros video {
+    height: 20vh;
+  }
+}
 main div.contenedorTituloConsultorio {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -339,19 +389,6 @@ main div.contenedorTexto .mapa {
   height: 450px;
 }
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
-  .contenedorTitulo {
-    height: 20vh;
-  }
-  .contenedorTitulo h1 {
-    font-weight: 300;
-    padding: 8rem;
-    font-size: 25px;
-  }
-  .contenedorTextoIndex h2 {
-    font-size: 15px;
-  }
-}
 main div.contenedorTituloContacto {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -417,67 +454,71 @@ main form.formulario .formularioContenedorBoton {
   align-items: center;
 }
 
-@media screen and (min-width: 0px) and (max-width: 768px) {
-  main section div.contenedorTitulo {
-    height: 20vh;
-  }
-  main section div.contenedorTitulo h1 {
-    font-weight: 300;
+/* ver por que no funciona
+.logo {
+    width: 50px; 
+}
+*/
+/*
+.contenedorTitulo
+{ height: 20vh;
+}
+.contenedorTitulo h1
+ {font-weight: 300;
     padding: 8rem;
-    font-size: 25px;
-  }
-  main div.contenedorTextoIndex h2 {
-    font-size: 15px;
-  }
-  .contenedorTitulo {
-    height: 20vh;
-  }
-  .contenedorTitulo h1 {
-    font-weight: 300;
-    padding: 8rem;
-    font-size: 25px;
-  }
-  .contenedorTextoIndex h2 {
-    font-size: 15px;
-  }
-  .columnaIzquierda, main section.containterPrimerCaja div.columnaIzquierdaTercer {
-    height: 20vh;
-  }
-  .columnaDerecha {
-    height: 20vh;
-  }
-  .contenedorTexto h2 {
-    font-size: 9px;
-    font-weight: 700;
-  }
-  .contenedorTexto p {
-    font-weight: 300;
-    font-size: 8px;
-  }
-  .contenedorTexto ul {
-    font-weight: 300;
-    font-size: 8px;
-  }
-  .contenedorTexto ol {
-    font-weight: 300;
-    font-size: 8px;
-  }
-  .contenedorTextoNosotros h3 {
-    font-size: 10px;
-    font-weight: 200;
-  }
-  .textoGaleria p {
-    font-size: 10px;
-  }
-  .contenedorTexto h4 {
-    font-weight: 700;
+    font-size: 25px; 
+   }
+
+
+.contenedorTextoIndex h2
+{font-size: 15px;
+}*/
+/*medias queries nque es to*/
+/*
+    .columnaIzquierda{ 
+        height: 20vh;
+       }
+
+    .columnaIzquierdaSegundo{
+        height: 20vh;
+    }
+    .columnaIzquierdaTercer{
+        height: 20vh;
+    }
+
+    .columnaDerecha{
+        height: 20vh;
+       }
+    .contenedorTexto h2
+        {font-size: 8px;
+        font-weight: 700;
+    }
+
+    .contenedorTexto p
+    {font-weight: 300;
+    font-size: 6px;
+    }
+
+    .contenedorTexto ul
+    {font-weight: 300;
+    font-size: 6px;
+    }
+
+    .contenedorTexto ol
+    {font-weight: 300;
+    font-size: 6px;
+    }
+
+    .contenedorTexto h4
+    {font-weight: 700;
     font-size: 20px;
-  }
-  .mapa {
-    width: 200px;
-    height: 200px;
-  }
-  .iconos {
-    font-size: 50px;
-  }
-}/*# sourceMappingURL=estilos.css.map */
+    }
+
+    .mapa
+    { width: 200px;
+    height:200px; 
+    }
+    .iconos
+    {font-size: 50px;
+    }
+} *//*# sourceMappingURL=estilos.css.map */
