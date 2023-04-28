@@ -1,5 +1,6 @@
 main {
-        .contenedorTituloIndex {
+        section {
+            .contenedorTituloIndex {
             color: $color-titulo;
             text-align: center;
             display: flex;
@@ -20,7 +21,8 @@ main {
 
             }
         }
-
+        }
+    
     .contenedorTextoIndex {
         color: $color-texto;
         text-align: center;
@@ -49,7 +51,8 @@ main {
 
 @media screen and (min-width: 0px) and (max-width:768px)  {
     main{
-        .contenedorTituloIndex {
+        section{
+         .contenedorTituloIndex {
             height: 20vh;
             h1{
                 font-weight: 300;
@@ -57,9 +60,10 @@ main {
                 font-size: 25px;
             }  
         }
+    }
         .contenedorTextoIndex {
             h2 {
-            font-size: 1px;
+            font-size: 10px;
             }
         }
     }

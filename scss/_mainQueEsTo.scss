@@ -67,7 +67,7 @@ main {
                 @include flexbox ( center, center, column, 35vh);
             }
 
-            .contenedorTexto {
+            .contenedorTextoQue {
                 color: $color-texto;
                 text-align: center;
 
@@ -97,7 +97,7 @@ main {
                 background-color: $fondo-cards;
                 @include flexbox ( center, center, column, 35vh);
 
-                .contenedorTexto {
+                .contenedorTextoQue {
                     color: $color-texto;
                     text-align: center;
                     h2 {
@@ -133,7 +133,7 @@ main {
                 .columnaDerecha{
                     height: 20vh;
                 }
-                .contenedorTexto{
+                .contenedorTextoQue{
                     h2{
                         font-size: 8px;
                         font-weight: 700;

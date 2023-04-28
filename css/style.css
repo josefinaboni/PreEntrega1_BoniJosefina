@@ -26,27 +26,13 @@
   font-weight: 800;
   font-size: 1, 75rem;
 }
-.header div.contenedorTitulo {
-  color: rgb(202, 99, 164);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35vh;
-  margin-bottom: 1rem;
-  background-image: url(../assets/img/fondo\ titulo\ op.JPG);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-}
-.header div.contenedorTitulo h1 {
-  font-weight: 300;
-  padding: 8rem;
-  font-size: 50px;
-}
 
-main .contenedorTituloIndex {
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .header .logo {
+    width: 50px;
+  }
+}
+main section .contenedorTituloIndex {
   color: rgb(255, 255, 255);
   text-align: center;
   display: flex;
@@ -60,7 +46,7 @@ main .contenedorTituloIndex {
   background-attachment: fixed;
   background-position: center;
 }
-main .contenedorTituloIndex h1 {
+main section .contenedorTituloIndex h1 {
   font-weight: 900;
   padding: 8rem;
   font-size: 50px;
@@ -86,16 +72,16 @@ main div.tarjetas h3 {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  main .contenedorTituloIndex {
+  main section .contenedorTituloIndex {
     height: 20vh;
   }
-  main .contenedorTituloIndex h1 {
+  main section .contenedorTituloIndex h1 {
     font-weight: 300;
     padding: 8rem;
     font-size: 25px;
   }
   main .contenedorTextoIndex h2 {
-    font-size: 1px;
+    font-size: 10px;
   }
 }
 main .contenedorTituloQue {
@@ -163,15 +149,15 @@ main .columnaDerecha {
   flex-direction: column;
   height: 35vh;
 }
-main .contenedorTexto {
+main .contenedorTextoQue {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main .contenedorTexto h2 {
+main .contenedorTextoQue h2 {
   font-size: 25px;
   font-weight: 700;
 }
-main .contenedorTexto ul {
+main .contenedorTextoQue ul {
   font-weight: 300;
   font-size: 15px;
 }
@@ -190,15 +176,15 @@ main .containterPrimerCaja .columnaDerecha {
   flex-direction: column;
   height: 35vh;
 }
-main .containterPrimerCaja .columnaDerecha .contenedorTexto {
+main .containterPrimerCaja .columnaDerecha .contenedorTextoQue {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main .containterPrimerCaja .columnaDerecha .contenedorTexto h2 {
+main .containterPrimerCaja .columnaDerecha .contenedorTextoQue h2 {
   font-size: 25px;
   font-weight: 700;
 }
-main .containterPrimerCaja .columnaDerecha .contenedorTexto ol {
+main .containterPrimerCaja .columnaDerecha .contenedorTextoQue ol {
   font-weight: 300;
   font-size: 15px;
 }
@@ -218,11 +204,11 @@ main .containterPrimerCaja .columnaDerecha .contenedorTexto ol {
   main .containerPrimerCaja .columnaDerecha {
     height: 20vh;
   }
-  main .containerPrimerCaja .contenedorTexto h2 {
+  main .containerPrimerCaja .contenedorTextoQue h2 {
     font-size: 8px;
     font-weight: 700;
   }
-  main .containerPrimerCaja .contenedorTexto p {
+  main .containerPrimerCaja .contenedorTextoQue p {
     font-weight: 300;
     font-size: 6px;
   }
@@ -326,7 +312,7 @@ main .galeriaNosotros .videoNosotros video {
     height: 20vh;
   }
 }
-main div.contenedorTituloConsultorio {
+main .contenedorTituloConsultorio {
   color: rgb(255, 255, 255);
   text-align: center;
   display: flex;
@@ -340,55 +326,55 @@ main div.contenedorTituloConsultorio {
   background-attachment: fixed;
   background-position: center;
 }
-main div.contenedorTituloConsultorio h1 {
+main .contenedorTituloConsultorio h1 {
   font-weight: 900;
   padding: 8rem;
   font-size: 50px;
 }
-main div.contenedorTextoIndex {
+main .contenedorTextoConusltorio {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main div.contenedorTextoIndex h2 {
+main .contenedorTextoConusltorio h2 {
   font-weight: 300;
   font-size: 20px;
 }
-main div.textoGaleria {
+main .textoGaleria {
   margin-top: 3rem;
   align-items: center;
   justify-content: center;
 }
-main div.textoGaleria p {
+main .textoGaleria p {
   color: rgb(202, 99, 164);
   font-size: 25px;
   font-weight: 700;
 }
-main div.contenedorGaleria {
+main .contenedorGaleria {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   justify-content: center;
 }
-main div.contenedorGaleria .imagenes {
+main .contenedorGaleria .imagenes {
   background-color: rgb(255, 255, 255);
   padding: 1rem 2rem 1rem 2rem;
   margin: 1rem;
 }
-main div.contenedorGaleria .imagenes img {
+main .contenedorGaleria .imagenes img {
   width: 100%;
   height: 40vh;
 }
-main div.contenedorTexto h4 {
+main .contenedorTexto h4 {
   font-weight: 700;
   font-size: 25px;
 }
-main div.contenedorTexto .mapa {
+main .contenedorTexto .mapa {
   width: 400px;
   height: 450px;
 }
 
-main div.contenedorTituloContacto {
+main .contenedorTituloContacto {
   color: rgb(255, 255, 255);
   text-align: center;
   display: flex;
@@ -402,16 +388,16 @@ main div.contenedorTituloContacto {
   background-attachment: fixed;
   background-position: center;
 }
-main div.contenedorTituloContacto h1 {
+main .contenedorTituloContacto h1 {
   font-weight: 900;
   padding: 8rem;
   font-size: 50px;
 }
-main div.contenedorTexto {
+main .contenedorTextoContacto {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main div.contenedorTexto h2 {
+main .contenedorTextoContacto h2 {
   font-size: 25px;
   font-weight: 700;
 }
@@ -428,6 +414,19 @@ main form.formulario .formularioContenedorBoton {
   background-color: rgb(202, 99, 164);
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  main .contenedorTituloContacto {
+    height: 20vh;
+  }
+  main .contenedorTituloContacto h1 {
+    font-weight: 300;
+    padding: 8rem;
+    font-size: 25px;
+  }
+  .contenedorTextoContacto h2 {
+    font-size: 1px;
+  }
+}
 .footer {
   color: rgb(255, 255, 255);
   background-color: rgb(180, 226, 247);
@@ -450,6 +449,14 @@ main form.formulario .formularioContenedorBoton {
   align-items: center;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  .footer .iconos {
+    font-size: 30px;
+  }
+  .footer .contenedorCreditos {
+    padding-top: 0rem;
+  }
+}
 /* ver por que no funciona
 .logo {
     width: 50px; 
