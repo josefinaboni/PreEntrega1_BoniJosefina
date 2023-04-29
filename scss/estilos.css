@@ -108,7 +108,7 @@ main .containterPrimerCaja {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-main .containterPrimerCaja .columnaIzquierdaPrimerCaja, main .containterPrimerCaja .containerTercerCaja .columnaIzquierdaTercerCaja, main .containerTercerCaja .containterPrimerCaja .columnaIzquierdaTercerCaja {
+main .containterPrimerCaja .columnaIzquierdaPrimerCaja {
   background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
   height: 35vh;
   background-repeat: no-repeat;
@@ -167,7 +167,13 @@ main .containerTercerCaja {
   margin-bottom: 2rem;
 }
 main .containerTercerCaja .columnaIzquierdaTercerCaja {
+  /* SSi uso el extend se me borra la imagen
+  @extend .columnaIzquierdaPrimerCaja;*/
   background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
+  height: 35vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 main .containerTercerCaja .columnaDerechaTercerCaja {
   background-color: rgb(255, 255, 255);
@@ -199,7 +205,7 @@ main .containerTercerCaja .contenedorTextoTercerCaja ol {
     padding: 8rem;
     font-size: 25px;
   }
-  main .containterPrimerCaja .columnaIzquierdaPrimerCaja, main .containterPrimerCaja .containerTercerCaja .columnaIzquierdaTercerCaja, main .containerTercerCaja .containterPrimerCaja .columnaIzquierdaTercerCaja {
+  main .containterPrimerCaja .columnaIzquierdaPrimerCaja {
     height: 25vh;
   }
   main .containterPrimerCaja .columnaDerechaPrimerCaja {

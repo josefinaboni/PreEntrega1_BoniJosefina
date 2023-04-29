@@ -23,6 +23,7 @@ main {
     .containterPrimerCaja {
         margin-top: 2rem;
         margin-bottom: 2rem;
+
         .columnaIzquierdaPrimerCaja {
             background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
             height: 35vh;
@@ -87,8 +88,13 @@ main {
 
 
         .columnaIzquierdaTercerCaja {
-        @extend .columnaIzquierdaPrimerCaja;
+            /* SSi uso el extend se me borra la imagen
+            @extend .columnaIzquierdaPrimerCaja;*/
             background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
+            height: 35vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
             
         }
 
