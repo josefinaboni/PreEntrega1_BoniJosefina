@@ -1,151 +1,178 @@
 main {
     .contenedorTituloQue {
-            color: $color-titulo;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 40vh;
-            margin-bottom: 1rem;
-            background-image: url(../assets/img/fondoQETO2.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-            
-            h1 {
-                font-weight: map-get($fuentes, black);
-                padding: 8rem;
-                font-size: $tamano-titulo;
-            }
+        color: $color-titulo;
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40vh;
+        margin-bottom: 1rem;
+        background-image: url(../assets/img/fondoQETO2.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+
+        h1 {
+            font-weight: map-get($fuentes, black);
+            padding: 8rem;
+            font-size: $tamano-titulo;
         }
-    
+    }
+
     .containterPrimerCaja {
         margin-top: 2rem;
         margin-bottom: 2rem;
-        
-    
-           .columnaIzquierda {
-                background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
-                height: 35vh;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-            }
-    
-            .columnaDerecha {
-                background-color:$fondo-cards;
-                @include flexbox ( center, center, column, 35vh);
-            }
-    
-            .contenedorTexto {
-                color: $color-texto;
-                text-align: center;
-    
-                h2 {
-                    font-size: $titulo-cards;
-                    font-weight: map-get($fuentes, bold);
-                }
-    
-                p {
-                    font-weight: map-get($fuentes, light);
-                    font-size: $tamano-texto-cards;
-                }
-            }
+        .columnaIzquierdaPrimerCaja {
+            background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
+            height: 35vh;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
         }
 
-            .columnaIzquierdaSegundo {
-                background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
-                height: 35vh;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
+        .columnaDerechaPrimerCaja {
+            background-color: $fondo-cards;
+            @include flexbox (center, center, column, 35vh);
+        }
+
+        .contenedorTextoPrimerCaja {
+            color: $color-texto;
+            text-align: center;
+
+            h2 {
+                font-size: $titulo-cards;
+                font-weight: map-get($fuentes, bold);
             }
 
-            .columnaDerecha {
-                background-color: $fondo-cards;
-                @include flexbox ( center, center, column, 35vh);
-            }
-
-            .contenedorTextoQue {
-                color: $color-texto;
-                text-align: center;
-
-                h2 {
-                    font-size: $titulo-cards;
-                    font-weight: map-get($fuentes, bold);
-                    
-                }
-
-                ul {
+            p {
                 font-weight: map-get($fuentes, light);
                 font-size: $tamano-texto-cards;
             }
         }
+    }
 
-    .containterPrimerCaja {
-            margin-top: 2rem;
-            margin-bottom: 2rem;
+    .columnaIzquierdaSegundaCaja {
+        background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
+        height: 35vh;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
 
-            .columnaIzquierdaTercer {
-                @extend .columnaIzquierda;
-                background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
-                
-            }
+    .columnaDerechaSegundaCaja {
+        background-color: $fondo-cards;
+        @include flexbox (center, center, column, 35vh);
+    }
 
-            .columnaDerecha {
-                background-color: $fondo-cards;
-                @include flexbox ( center, center, column, 35vh);
+    .contenedorTextoSegundaCaja {
+        color: $color-texto;
+        text-align: center;
 
-                .contenedorTextoQue {
-                    color: $color-texto;
-                    text-align: center;
-                    h2 {
-                        font-size: $titulo-cards;
-                        font-weight: map-get($fuentes, bold);
-                    }
+        h2 {
+            font-size: $titulo-cards;
+            font-weight: map-get($fuentes, bold);
 
-                    ol {
-                        font-weight: map-get($fuentes, light);
-                        font-size: $tamano-texto-cards;
-                    }
-                }
+        }
 
-            }
-
+        ul {
+            font-weight: map-get($fuentes, light);
+            font-size: $tamano-texto-cards;
         }
     }
 
+    .containerTercerCaja {
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+
+
+        .columnaIzquierdaTercerCaja {
+        @extend .columnaIzquierdaPrimerCaja;
+            background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
+            
+        }
+
+        .columnaDerechaTercerCaja {
+            background-color: $fondo-cards;
+            @include flexbox (center, center, column, 35vh);
+        }
+
+        .contenedorTextoTercerCaja {
+            color: $color-texto;
+            text-align: center;
+
+            h2 {
+                font-size: $titulo-cards;
+                font-weight: map-get($fuentes, bold);
+
+            }
+
+            ol {
+                font-weight: map-get($fuentes, light);
+                font-size: $tamano-texto-cards;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 0px) and (max-width:768px)  {
-        main{
-            .contenedorTituloQue{
-                height: 20vh;
-                h1{
-                    font-weight: 300;
-                    padding: 8rem;
-                    font-size: 25px;
-                }  
+    main{
+        .contenedorTituloQue{
+            height: 20vh;
+            h1{
+                font-weight: 300;
+                padding: 8rem;
+                font-size: 25px;
             }  
-            .containerPrimerCaja{
-                .columnaIzquierda {
-                    height: 20vh;
+        }  
+        .containterPrimerCaja{
+            .columnaIzquierdaPrimerCaja{
+                height: 25vh;
+            }
+            .columnaDerechaPrimerCaja{
+                height: 25vh;
+            }
+            .contenedorTextoPrimerCaja {
+                h2{
+                    font-size: 15px;
                 }
-                .columnaDerecha{
-                    height: 20vh;
-                }
-                .contenedorTextoQue{
-                    h2{
-                        font-size: 8px;
-                        font-weight: 700;
-                    }
-                    p{
-                        font-weight: 300;
-                        font-size: 6px;
-                    }
+                p{
+                    font-size: 12px;
                 }
             }
         }
+        .columnaIzquierdaSegundaCaja{
+            height: 25vh;
+        }
+        .columnaDerechaSegundaCaja{
+            height: 25vh;
+        }
+        .contenedorTextoSegundaCaja{
+            h2{
+                font-size: 15px;
+            }
+            ul{
+                font-size: 10px;
+            }
+        }
+        .containerTercerCaja{
+            .columnaIzquierdaTercerCaja{
+                height: 25vh;
+            }
+            .columnaDerechaTercerCaja{
+                height: 25vh;
+            }
+            .contenedorTextoTercerCaja{
+                h2{
+                    font-size: 15px;
+                }
+                ol{
+                    font-size: 10px;
+                }
+            }
+        }
+        
+        
+    }
 
 }
-
-    

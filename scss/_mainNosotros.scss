@@ -19,7 +19,7 @@ main{
             font-size: $tamano-titulo;
         }
     }
-        .contenedorVideo {
+        .contenedorVideoNosotros {
             padding-top: 1rem;
             padding-bottom: 1rem;
             padding-left: 1rem;
@@ -43,7 +43,7 @@ main{
             font-weight: map-get($fuentes, thin)
         }
     }  
-    .textoGaleria {
+    .textoGaleriaNosotros {
         margin-top: 3rem;
         align-items: center;
         justify-content: center;
@@ -84,15 +84,20 @@ main{
                 font-size: 25px;
             }  
         }
+        .contenedorVideoNosotros{
+            video{
+                height: 20vh;
+            }
+        }
         .contenedorTextoNosotros {
             h3 {
                 font-size: 10px; 
                 font-weight: 200;
             }
         }
-        .textoGaleria{
+        .textoGaleriaNosotros{
             p{
-                font-size: 8px;
+                font-size: 12px;
             }
 
         }

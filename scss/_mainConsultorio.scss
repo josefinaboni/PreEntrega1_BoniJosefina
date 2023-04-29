@@ -22,37 +22,37 @@ main {
         }
     }
 
-    .contenedorTextoConusltorio {
+    .contenedorTextoConsultorio {
         color: $color-texto;
         text-align: center;
 
-        h2 {
+        p {
             font-weight: map-get($fuentes, light);
             font-size: $tamano-texto-secundario;
 
         }
     }
 
-    .textoGaleria {
+    .textoGaleriaConsultorio {
         margin-top: 3rem;
         align-items: center;
         justify-content: center;
 
-        p {
+        h2 {
             color: $color-texto;
             font-size: $titulo-cards;
             font-weight: map-get($fuentes, bold);
         }
     }
 
-    .contenedorGaleria {
+    .contenedorGaleriaConsultorio {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-evenly;
         align-items: center;
         justify-content: center;
 
-        .imagenes {
+        .imagenesConsultorio {
             background-color: $fondo-cards;
             padding: 1rem 2rem 1rem 2rem;
             margin: 1rem;
@@ -64,8 +64,8 @@ main {
         }
     }
 
-    .contenedorTexto {
-        h4 {
+    .contenedorTextoConsultorio {
+        h2 {
             font-weight: map-get($fuentes, bold);
             font-size: $titulo-cards;
         }
@@ -73,6 +73,38 @@ main {
         .mapa {
             width: 400px;
             height: 450px;
+        }
+    }
+}
+@media screen and (min-width: 0px) and (max-width:768px) {
+    main{
+        .contenedorTituloConsultorio {
+            height: 20vh;
+            h1{
+                font-weight: 300;
+                padding: 8rem;
+                font-size: 25px;
+            }  
+        }
+        .contenedorTextoConsultorio {
+            p{
+                font-size: 10px;
+            }
+        }
+        .textoGaleriaConsultorio{
+            h2{
+                font-size: 12px; 
+            }
+        }
+        .contenedorTextoConsultorio{
+            h2{
+                font-size: 12px; 
+            }
+            .mapa{
+                height: 250px;
+                width: 200px;
+            }
+
         }
     }
 }

@@ -81,7 +81,7 @@ main div.tarjetas h3 {
     font-size: 25px;
   }
   main .contenedorTextoIndex h2 {
-    font-size: 10px;
+    font-size: 15px;
   }
 }
 main .contenedorTituloQue {
@@ -107,14 +107,14 @@ main .containterPrimerCaja {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-main .containterPrimerCaja .columnaIzquierda, main .containterPrimerCaja .columnaIzquierdaTercer {
+main .containterPrimerCaja .columnaIzquierdaPrimerCaja, main .containterPrimerCaja .containerTercerCaja .columnaIzquierdaTercerCaja, main .containerTercerCaja .containterPrimerCaja .columnaIzquierdaTercerCaja {
   background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-main .containterPrimerCaja .columnaDerecha {
+main .containterPrimerCaja .columnaDerechaPrimerCaja {
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -122,26 +122,26 @@ main .containterPrimerCaja .columnaDerecha {
   flex-direction: column;
   height: 35vh;
 }
-main .containterPrimerCaja .contenedorTexto {
+main .containterPrimerCaja .contenedorTextoPrimerCaja {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main .containterPrimerCaja .contenedorTexto h2 {
+main .containterPrimerCaja .contenedorTextoPrimerCaja h2 {
   font-size: 25px;
   font-weight: 700;
 }
-main .containterPrimerCaja .contenedorTexto p {
+main .containterPrimerCaja .contenedorTextoPrimerCaja p {
   font-weight: 300;
   font-size: 15px;
 }
-main .columnaIzquierdaSegundo {
+main .columnaIzquierdaSegundaCaja {
   background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-main .columnaDerecha {
+main .columnaDerechaSegundaCaja {
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -149,26 +149,26 @@ main .columnaDerecha {
   flex-direction: column;
   height: 35vh;
 }
-main .contenedorTextoQue {
+main .contenedorTextoSegundaCaja {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main .contenedorTextoQue h2 {
+main .contenedorTextoSegundaCaja h2 {
   font-size: 25px;
   font-weight: 700;
 }
-main .contenedorTextoQue ul {
+main .contenedorTextoSegundaCaja ul {
   font-weight: 300;
   font-size: 15px;
 }
-main .containterPrimerCaja {
+main .containerTercerCaja {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-main .containterPrimerCaja .columnaIzquierdaTercer {
+main .containerTercerCaja .columnaIzquierdaTercerCaja {
   background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
 }
-main .containterPrimerCaja .columnaDerecha {
+main .containerTercerCaja .columnaDerechaTercerCaja {
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -176,15 +176,15 @@ main .containterPrimerCaja .columnaDerecha {
   flex-direction: column;
   height: 35vh;
 }
-main .containterPrimerCaja .columnaDerecha .contenedorTextoQue {
+main .containerTercerCaja .contenedorTextoTercerCaja {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main .containterPrimerCaja .columnaDerecha .contenedorTextoQue h2 {
+main .containerTercerCaja .contenedorTextoTercerCaja h2 {
   font-size: 25px;
   font-weight: 700;
 }
-main .containterPrimerCaja .columnaDerecha .contenedorTextoQue ol {
+main .containerTercerCaja .contenedorTextoTercerCaja ol {
   font-weight: 300;
   font-size: 15px;
 }
@@ -198,19 +198,41 @@ main .containterPrimerCaja .columnaDerecha .contenedorTextoQue ol {
     padding: 8rem;
     font-size: 25px;
   }
-  main .containerPrimerCaja .columnaIzquierda, main .containerPrimerCaja .containterPrimerCaja .columnaIzquierdaTercer, main .containterPrimerCaja .containerPrimerCaja .columnaIzquierdaTercer {
-    height: 20vh;
+  main .containterPrimerCaja .columnaIzquierdaPrimerCaja, main .containterPrimerCaja .containerTercerCaja .columnaIzquierdaTercerCaja, main .containerTercerCaja .containterPrimerCaja .columnaIzquierdaTercerCaja {
+    height: 25vh;
   }
-  main .containerPrimerCaja .columnaDerecha {
-    height: 20vh;
+  main .containterPrimerCaja .columnaDerechaPrimerCaja {
+    height: 25vh;
   }
-  main .containerPrimerCaja .contenedorTextoQue h2 {
-    font-size: 8px;
-    font-weight: 700;
+  main .containterPrimerCaja .contenedorTextoPrimerCaja h2 {
+    font-size: 15px;
   }
-  main .containerPrimerCaja .contenedorTextoQue p {
-    font-weight: 300;
-    font-size: 6px;
+  main .containterPrimerCaja .contenedorTextoPrimerCaja p {
+    font-size: 12px;
+  }
+  main .columnaIzquierdaSegundaCaja {
+    height: 25vh;
+  }
+  main .columnaDerechaSegundaCaja {
+    height: 25vh;
+  }
+  main .contenedorTextoSegundaCaja h2 {
+    font-size: 15px;
+  }
+  main .contenedorTextoSegundaCaja ul {
+    font-size: 10px;
+  }
+  main .containerTercerCaja .columnaIzquierdaTercerCaja {
+    height: 25vh;
+  }
+  main .containerTercerCaja .columnaDerechaTercerCaja {
+    height: 25vh;
+  }
+  main .containerTercerCaja .contenedorTextoTercerCaja h2 {
+    font-size: 15px;
+  }
+  main .containerTercerCaja .contenedorTextoTercerCaja ol {
+    font-size: 10px;
   }
 }
 main .contenedorTituloNosotros {
@@ -232,13 +254,13 @@ main .contenedorTituloNosotros h1 {
   padding: 8rem;
   font-size: 50px;
 }
-main .contenedorVideo {
+main .contenedorVideoNosotros {
   padding-top: 1rem;
   padding-bottom: 1rem;
   padding-left: 1rem;
   background-color: rgb(255, 255, 255);
 }
-main .contenedorVideo video {
+main .contenedorVideoNosotros video {
   height: 35vh;
   width: 100%;
 }
@@ -255,12 +277,12 @@ main .contenedorTextoNosotros h3 {
   font-size: 20px;
   font-weight: 200;
 }
-main .textoGaleria {
+main .textoGaleriaNosotros {
   margin-top: 3rem;
   align-items: center;
   justify-content: center;
 }
-main .textoGaleria p {
+main .textoGaleriaNosotros p {
   color: rgb(202, 99, 164);
   font-size: 25px;
   font-weight: 700;
@@ -298,12 +320,15 @@ main .galeriaNosotros .videoNosotros video {
     padding: 8rem;
     font-size: 25px;
   }
+  main .contenedorVideoNosotros video {
+    height: 20vh;
+  }
   main .contenedorTextoNosotros h3 {
     font-size: 10px;
     font-weight: 200;
   }
-  main .textoGaleria p {
-    font-size: 8px;
+  main .textoGaleriaNosotros p {
+    font-size: 12px;
   }
   main .galeriaNosotros .imagenes img {
     height: 20vh;
@@ -331,49 +356,72 @@ main .contenedorTituloConsultorio h1 {
   padding: 8rem;
   font-size: 50px;
 }
-main .contenedorTextoConusltorio {
+main .contenedorTextoConsultorio {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main .contenedorTextoConusltorio h2 {
+main .contenedorTextoConsultorio p {
   font-weight: 300;
   font-size: 20px;
 }
-main .textoGaleria {
+main .textoGaleriaConsultorio {
   margin-top: 3rem;
   align-items: center;
   justify-content: center;
 }
-main .textoGaleria p {
+main .textoGaleriaConsultorio h2 {
   color: rgb(202, 99, 164);
   font-size: 25px;
   font-weight: 700;
 }
-main .contenedorGaleria {
+main .contenedorGaleriaConsultorio {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: center;
   justify-content: center;
 }
-main .contenedorGaleria .imagenes {
+main .contenedorGaleriaConsultorio .imagenesConsultorio {
   background-color: rgb(255, 255, 255);
   padding: 1rem 2rem 1rem 2rem;
   margin: 1rem;
 }
-main .contenedorGaleria .imagenes img {
+main .contenedorGaleriaConsultorio .imagenesConsultorio img {
   width: 100%;
   height: 40vh;
 }
-main .contenedorTexto h4 {
+main .contenedorTextoConsultorio h2 {
   font-weight: 700;
   font-size: 25px;
 }
-main .contenedorTexto .mapa {
+main .contenedorTextoConsultorio .mapa {
   width: 400px;
   height: 450px;
 }
 
+@media screen and (min-width: 0px) and (max-width: 768px) {
+  main .contenedorTituloConsultorio {
+    height: 20vh;
+  }
+  main .contenedorTituloConsultorio h1 {
+    font-weight: 300;
+    padding: 8rem;
+    font-size: 25px;
+  }
+  main .contenedorTextoConsultorio p {
+    font-size: 10px;
+  }
+  main .textoGaleriaConsultorio h2 {
+    font-size: 12px;
+  }
+  main .contenedorTextoConsultorio h2 {
+    font-size: 12px;
+  }
+  main .contenedorTextoConsultorio .mapa {
+    height: 250px;
+    width: 200px;
+  }
+}
 main .contenedorTituloContacto {
   color: rgb(255, 255, 255);
   text-align: center;
@@ -423,8 +471,8 @@ main form.formulario .formularioContenedorBoton {
     padding: 8rem;
     font-size: 25px;
   }
-  .contenedorTextoContacto h2 {
-    font-size: 1px;
+  main .contenedorTextoContacto h2 {
+    font-size: 12px;
   }
 }
 .footer {
@@ -457,73 +505,5 @@ main form.formulario .formularioContenedorBoton {
     padding-top: 0rem;
   }
 }
-/* ver por que no funciona
-.logo {
-    width: 50px; 
-}
-*/
-/*
-.contenedorTitulo
-{ height: 20vh;
-}
-.contenedorTitulo h1
- {font-weight: 300;
-    padding: 8rem;
-    font-size: 25px; 
-   }
-
-
-.contenedorTextoIndex h2
-{font-size: 15px;
-}*/
-/*medias queries nque es to*/
-/*
-    .columnaIzquierda{ 
-        height: 20vh;
-       }
-
-    .columnaIzquierdaSegundo{
-        height: 20vh;
-    }
-    .columnaIzquierdaTercer{
-        height: 20vh;
-    }
-
-    .columnaDerecha{
-        height: 20vh;
-       }
-    .contenedorTexto h2
-        {font-size: 8px;
-        font-weight: 700;
-    }
-
-    .contenedorTexto p
-    {font-weight: 300;
-    font-size: 6px;
-    }
-
-    .contenedorTexto ul
-    {font-weight: 300;
-    font-size: 6px;
-    }
-
-    .contenedorTexto ol
-    {font-weight: 300;
-    font-size: 6px;
-    }
-
-    .contenedorTexto h4
-    {font-weight: 700;
-    font-size: 20px;
-    }
-
-    .mapa
-    { width: 200px;
-    height:200px; 
-    }
-    .iconos
-    {font-size: 50px;
-    }
-} */
 
 /*# sourceMappingURL=style.css.map */
