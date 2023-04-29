@@ -1,26 +1,29 @@
 main {
+    section {
+        .contenedorTituloConsultorio {
+            color: $color-titulo;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35vh;
+            margin-bottom: 1rem;
+            background-image: url(../assets/img/fondoConsultorio.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
 
-    .contenedorTituloConsultorio {
-        color: $color-titulo;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 35vh;
-        margin-bottom: 1rem;
-        background-image: url(../assets/img/fondoConsultorio.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
+            h1 {
+                font-weight: map-get($fuentes, black);
+                padding: 8rem;
+                font-size: $tamano-titulo;
 
-        h1 {
-            font-weight: map-get($fuentes, black);
-            padding: 8rem;
-            font-size: $tamano-titulo;
-
+            }
         }
     }
+
+
 
     .contenedorTextoConsultorio {
         color: $color-texto;
@@ -48,7 +51,6 @@ main {
     .contenedorGaleriaConsultorio {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
         align-items: center;
         justify-content: center;
 
@@ -76,32 +78,50 @@ main {
         }
     }
 }
+
 @media screen and (min-width: 0px) and (max-width:768px) {
-    main{
-        .contenedorTituloConsultorio {
-            height: 20vh;
-            h1{
-                font-weight: 300;
-                padding: 8rem;
-                font-size: 25px;
-            }  
+    main {
+        section {
+            .contenedorTituloConsultorio {
+                height: 20vh;
+
+                h1 {
+                    font-weight: 300;
+                    padding: 8rem;
+                    font-size: 25px;
+                }
+            }
+
         }
+
         .contenedorTextoConsultorio {
-            p{
+            p {
                 font-size: 10px;
             }
         }
-        .textoGaleriaConsultorio{
-            h2{
-                font-size: 12px; 
+
+        .textoGaleriaConsultorio {
+            h2 {
+                font-size: 12px;
             }
         }
-        .contenedorTextoConsultorio{
-            h2{
-                font-size: 12px; 
+        .contenedorGaleriaConsultorio {
+            .imagenesConsultorio {
+                
+                img {
+                    
+                    height: 20vh;
+                }
             }
-            .mapa{
-                height: 250px;
+        }
+
+        .contenedorTextoConsultorio {
+            h2 {
+                font-size: 12px;
+            }
+
+            .mapa {
+                height: 25vh;
                 width: 200px;
             }
 

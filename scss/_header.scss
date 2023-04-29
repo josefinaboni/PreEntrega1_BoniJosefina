@@ -4,23 +4,44 @@
     z-index: 1020;
     top: 0;
     bottom: 0;
-    .logo{
-        
-        width:(100px) ;
-    }
+    nav {
+        div {
+            a {
+                .logo {
+                    width: (100px);
+                }
+            }
 
-    .navbar-light .navbar-nav .linkNav {
-        color: $color-texto;
-        text-decoration: none;
-        font-weight: 800;
-        font-size: 1, 75rem;
+            div {
+                ul {
+                    li {
+                        .linkNav {
+                            color: $color-texto !important;
+                            text-decoration: none;
+                            font-weight: 800;
+                            font-size: 1, 75rem;
+                            
+                        &:hover{
+                            color: rgb(255, 255, 255) !important;
+                        }
+                        }
+                    }
+                }
+            }
+        }
     }
-    
 }
+
 @media screen and (min-width: 0px) and (max-width:768px) {
-    .header{
-        .logo{
-            width: (50px);
+    .header {
+        nav {
+            div {
+                a {
+                    .logo {
+                        width: (50px);
+                    }
+                }
+            }
         }
     }
 }

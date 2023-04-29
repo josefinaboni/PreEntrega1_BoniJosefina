@@ -1,84 +1,95 @@
 main {
-    .contenedorTituloQue {
-        color: $color-titulo;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 40vh;
-        margin-bottom: 1rem;
-        background-image: url(../assets/img/fondoQETO2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
+    section {
+        .contenedorTituloQue {
+            color: $color-titulo;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 40vh;
+            margin-bottom: 1rem;
+            background-image: url(../assets/img/fondoQETO2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
 
-        h1 {
-            font-weight: map-get($fuentes, black);
-            padding: 8rem;
-            font-size: $tamano-titulo;
+            h1 {
+                font-weight: map-get($fuentes, black);
+                padding: 8rem;
+                font-size: $tamano-titulo;
+            }
         }
     }
+
 
     .containterPrimerCaja {
         margin-top: 2rem;
         margin-bottom: 2rem;
 
-        .columnaIzquierdaPrimerCaja {
-            background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
-            height: 35vh;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-        }
-
-        .columnaDerechaPrimerCaja {
-            background-color: $fondo-cards;
-            @include flexbox (center, center, column, 35vh);
-        }
-
-        .contenedorTextoPrimerCaja {
-            color: $color-texto;
-            text-align: center;
-
-            h2 {
-                font-size: $titulo-cards;
-                font-weight: map-get($fuentes, bold);
+        div {
+            .columnaIzquierdaPrimerCaja {
+                background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
+                object-fit: none;
+                height: 35vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
             }
 
-            p {
-                font-weight: map-get($fuentes, light);
-                font-size: $tamano-texto-cards;
+            .columnaDerechaPrimerCaja {
+                background-color: $fondo-cards;
+                @include flexbox (center, center, column, 35vh);
+            }
+
+            .contenedorTextoPrimerCaja {
+                color: $color-texto;
+                text-align: center;
+
+                h2 {
+                    font-size: $titulo-cards;
+                    font-weight: map-get($fuentes, bold);
+                }
+
+                p {
+                    font-weight: map-get($fuentes, light);
+                    font-size: $tamano-texto-cards;
+                }
             }
         }
     }
 
-    .columnaIzquierdaSegundaCaja {
-        background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
-        height: 35vh;
-        background-repeat: no-repeat;
-        background-size: cover;
-        background-position: center;
-    }
+    section {
+        div {
+            .columnaIzquierdaSegundaCaja {
+                
+                background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
+                height: 35vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
 
-    .columnaDerechaSegundaCaja {
-        background-color: $fondo-cards;
-        @include flexbox (center, center, column, 35vh);
-    }
+            .columnaDerechaSegundaCaja {
+                background-color: $fondo-cards;
+                @include flexbox (center, center, column, 35vh);
+            }
 
-    .contenedorTextoSegundaCaja {
-        color: $color-texto;
-        text-align: center;
+            .contenedorTextoSegundaCaja {
+                color: $color-texto;
+                text-align: center;
 
-        h2 {
-            font-size: $titulo-cards;
-            font-weight: map-get($fuentes, bold);
+                h2 {
+                    font-size: $titulo-cards;
+                    font-weight: map-get($fuentes, bold);
 
-        }
+                }
 
-        ul {
-            font-weight: map-get($fuentes, light);
-            font-size: $tamano-texto-cards;
+                ul {
+                    font-weight: map-get($fuentes, light);
+                    font-size: $tamano-texto-cards;
+                }
+            }
         }
     }
 
@@ -86,99 +97,119 @@ main {
         margin-top: 2rem;
         margin-bottom: 2rem;
 
-
-        .columnaIzquierdaTercerCaja {
-            /* SSi uso el extend se me borra la imagen
-            @extend .columnaIzquierdaPrimerCaja;*/
-            background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
-            height: 35vh;
-            background-repeat: no-repeat;
-            background-size: cover;
-            background-position: center;
-            
-        }
-
-        .columnaDerechaTercerCaja {
-            background-color: $fondo-cards;
-            @include flexbox (center, center, column, 35vh);
-        }
-
-        .contenedorTextoTercerCaja {
-            color: $color-texto;
-            text-align: center;
-
-            h2 {
-                font-size: $titulo-cards;
-                font-weight: map-get($fuentes, bold);
+        div {
+            .columnaIzquierdaTercerCaja {
+                @extend .columnaIzquierdaSegundaCaja;
+                background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
+                
 
             }
 
-            ol {
-                font-weight: map-get($fuentes, light);
-                font-size: $tamano-texto-cards;
+            .columnaDerechaTercerCaja {
+                background-color: $fondo-cards;
+                @include flexbox (center, center, column, 35vh);
+            }
+
+            .contenedorTextoTercerCaja {
+                color: $color-texto;
+                text-align: center;
+
+                h2 {
+                    font-size: $titulo-cards;
+                    font-weight: map-get($fuentes, bold);
+
+                }
+
+                ol {
+                    font-weight: map-get($fuentes, light);
+                    font-size: $tamano-texto-cards;
+                }
             }
         }
     }
 }
+@media screen and (min-width: 0px) and (max-width:768px) {
+    main {
+        section {
 
-@media screen and (min-width: 0px) and (max-width:768px)  {
-    main{
-        .contenedorTituloQue{
-            height: 20vh;
-            h1{
-                font-weight: 300;
-                padding: 8rem;
-                font-size: 25px;
-            }  
-        }  
-        .containterPrimerCaja{
-            .columnaIzquierdaPrimerCaja{
-                height: 25vh;
-            }
-            .columnaDerechaPrimerCaja{
-                height: 25vh;
-            }
-            .contenedorTextoPrimerCaja {
-                h2{
-                    font-size: 15px;
-                }
-                p{
-                    font-size: 12px;
+
+            .contenedorTituloQue {
+                height: 20vh;
+
+                h1 {
+                    font-weight: 300;
+                    padding: 8rem;
+                    font-size: 25px;
                 }
             }
         }
-        .columnaIzquierdaSegundaCaja{
-            height: 25vh;
-        }
-        .columnaDerechaSegundaCaja{
-            height: 25vh;
-        }
-        .contenedorTextoSegundaCaja{
-            h2{
-                font-size: 15px;
-            }
-            ul{
-                font-size: 10px;
-            }
-        }
-        .containerTercerCaja{
-            .columnaIzquierdaTercerCaja{
-                height: 25vh;
-            }
-            .columnaDerechaTercerCaja{
-                height: 25vh;
-            }
-            .contenedorTextoTercerCaja{
-                h2{
-                    font-size: 15px;
+
+        .containterPrimerCaja {
+            div {
+
+
+                .columnaIzquierdaPrimerCaja {
+                    height: 25vh;
                 }
-                ol{
-                    font-size: 10px;
+
+                .columnaDerechaPrimerCaja {
+                    height: 25vh;
+                }
+
+                .contenedorTextoPrimerCaja {
+                    h2 {
+                        font-size: 15px;
+                    }
+
+                    p {
+                        font-size: 12px;
+                    }
                 }
             }
         }
-        
-        
+
+        section {
+            div {
+                .columnaIzquierdaSegundaCaja {
+                    height: 25vh;
+                }
+
+                .columnaDerechaSegundaCaja {
+                    height: 25vh;
+                }
+
+                .contenedorTextoSegundaCaja {
+                    h2 {
+                        font-size: 15px;
+                    }
+
+                    ul {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+
+        .containerTercerCaja {
+            div {
+                .columnaIzquierdaTercerCaja {
+                    height: 25vh;
+                }
+
+                .columnaDerechaTercerCaja {
+                    height: 25vh;
+                }
+
+                .contenedorTextoTercerCaja {
+                    h2 {
+                        font-size: 15px;
+                    }
+
+                    ol {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
     }
-
 }

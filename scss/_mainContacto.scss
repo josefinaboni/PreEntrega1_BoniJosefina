@@ -1,24 +1,27 @@
-main{ 
-    
-    .contenedorTituloContacto {
-        color: $color-titulo;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 35vh;
-        margin-bottom: 1rem;
-        background-image: url(../assets/img/fondocontacto.jpg);
-        background-size:cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        h1 {
-            font-weight: map-get($fuentes, black);
-            padding: 8rem;
-            font-size: $tamano-titulo;
+main {
+    section {
+        .contenedorTituloContacto {
+            color: $color-titulo;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35vh;
+            margin-bottom: 1rem;
+            background-image: url(../assets/img/fondocontacto.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+
+            h1 {
+                font-weight: map-get($fuentes, black);
+                padding: 8rem;
+                font-size: $tamano-titulo;
+            }
         }
     }
+
     .contenedorTextoContacto {
         color: $color-texto;
         text-align: center;
@@ -28,37 +31,46 @@ main{
             font-weight: map-get($fuentes, bold);
         }
     }
-       form.formulario {
+
+    div {
+        .formulario {
             display: flex;
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
             ::placeholder {
                 color: rgb(0, 0, 0) !important;
             }
+
             .formularioContenedorBoton {
                 background-color: rgb(202, 99, 164);
-            
+
             }
-        } 
+        }
+    }
+
 }
+
 @media screen and (min-width: 0px) and (max-width:768px) {
-    main{
-        .contenedorTituloContacto{
+    main {
+        section{
+        .contenedorTituloContacto {
             height: 20vh;
 
-                h1{
-                    font-weight: 300;
-                    padding: 8rem;
-                    font-size: 25px;
-                } 
+            h1 {
+                font-weight: 300;
+                padding: 8rem;
+                font-size: 25px;
+            }
         }
-    
-    .contenedorTextoContacto{
-        h2 {
-            font-size: 12px;
-            
         }
+
+        .contenedorTextoContacto {
+            h2 {
+                font-size: 12px;
+
+            }
         }
     }
 }

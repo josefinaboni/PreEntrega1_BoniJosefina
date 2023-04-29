@@ -1,117 +1,177 @@
-main{ 
-    
-    .contenedorTituloNosotros {
-        color: $color-titulo;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 35vh;
-        margin-bottom: 1rem;
-        background-image: url(../assets/img/fondoNosotros2.jpg);
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center;
-        h1 {
-            font-weight: map-get($fuentes, black);
-            padding: 8rem;
-            font-size: $tamano-titulo;
+main {
+    section {
+        .contenedorTituloNosotros {
+            color: $color-titulo;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 35vh;
+            margin-bottom: 1rem;
+            background-image: url(../assets/img/fondoNosotros2.jpg);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center;
+
+            h1 {
+                font-weight: map-get($fuentes, black);
+                padding: 8rem;
+                font-size: $tamano-titulo;
+            }
         }
     }
-        .contenedorVideoNosotros {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
-            padding-left: 1rem;
-            background-color: $fondo-cards;
-            video {
-                height: 35vh;
-                width: 100%;
-            
+
+    div {
+        div {
+            .contenedorVideoNosotros {
+                padding-top: 1rem;
+                padding-bottom: 1rem;
+                padding-left: 1rem;
+                background-color: $fondo-cards;
+
+                video {
+                    height: 35vh;
+                    width: 100%;
+
+                }
             }
-        }  
-    .contenedorTextoNosotros {
-        color: $color-texto;
-        background-color: $fondo-cards;
-        text-align: center;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: auto;
-        h3 {
-            font-size: $tamano-texto-secundario;
-            font-weight: map-get($fuentes, thin)
+
+            .contenedorTextoNosotros {
+                color: $color-texto;
+                background-color: $fondo-cards;
+                text-align: center;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: auto;
+
+                h3 {
+                    font-size: $tamano-texto-secundario;
+                    font-weight: map-get($fuentes, thin)
+                }
+            }
+
         }
-    }  
+    }
+
     .textoGaleriaNosotros {
         margin-top: 3rem;
         align-items: center;
         justify-content: center;
+
         p {
             color: $color-texto;
             font-size: $titulo-cards;
             font-weight: map-get($fuentes, bold);
         }
-    }  
+    }
+
     .galeriaNosotros {
-        @include flexboxSinH ( center, center, column,);
+        @include flexboxSinH (center, center, column, );
+        div{
             .imagenes {
                 background-color: $fondo-cards;
                 padding: 1rem 2rem 1rem 2rem;
                 margin: 1rem;
+                
+    
                 img {
                     width: 100%;
                     height: 40vh;
                 }
+                a{
+                    color: $color-texto;
+                    font-weight: map-get($fuentes, bold);
+                    &:hover{
+                        color: rgb(164, 196, 167);
+                    }
+                }
             }
+            
             .videoNosotros {
                 display: flex;
                 flex-direction: column;
+                background-color: $fondo-cards;
+                padding: 1rem 2rem 1rem 2rem;
+                margin: 1rem;
+    
                 video {
                     width: 100%;
                     height: 50vh;
                 }
-            }
-}   
-}
-@media screen and (min-width: 0px) and (max-width:768px)  {
-    main{
-        .contenedorTituloNosotros{
-            height: 20vh;
-            h1{
-                font-weight: 300;
-                padding: 8rem;
-                font-size: 25px;
-            }  
-        }
-        .contenedorVideoNosotros{
-            video{
-                height: 20vh;
-            }
-        }
-        .contenedorTextoNosotros {
-            h3 {
-                font-size: 10px; 
-                font-weight: 200;
-            }
-        }
-        .textoGaleriaNosotros{
-            p{
-                font-size: 12px;
-            }
-
-        }
-        .galeriaNosotros {
-            .imagenes{
-                img{
-                    height: 20vh;
+                a{
+                    color: $color-texto;
+                    font-weight: map-get($fuentes, bold);
+                    &:hover{
+                        color: rgb(164, 196, 167);
+                    }
                 }
             }
-            .videoNosotros{
-                video{
-                    height: 20vh; 
-                }
         }
     }
 }
+@media screen and (min-width: 0px) and (max-width:768px) {
+    main {
+        section {
+            .contenedorTituloNosotros {
+                height: 20vh;
+
+                h1 {
+                    font-weight: 300;
+                    padding: 8rem;
+                    font-size: 25px;
+                }
+            }
+        }
+
+        div {
+            div {
+                .contenedorVideoNosotros {
+                    video {
+                        height: 20vh;
+                    }
+                }
+
+                .contenedorTextoNosotros {
+
+                    h3 {
+                        font-size: 10px;
+                        font-weight: 200;
+                    }
+                }
+            }
+        }
+
+        .textoGaleriaNosotros {
+
+            p {
+                font-size: 12px;
+            }
+        }
+
+        .galeriaNosotros {
+
+
+            div {
+                .imagenes {
+
+                    img {
+                        height: 20vh;
+                        object-fit: scale-down;
+                    }
+                        
+                }
+
+
+                .videoNosotros {
+
+                    video {
+                        height: 20vh;
+                        object-fit: scale-down;
+                    }
+                }
+            }
+        }
+    }
 }

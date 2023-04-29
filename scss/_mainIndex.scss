@@ -1,6 +1,6 @@
 main {
-        section {
-            .contenedorTituloIndex {
+    section {
+        .contenedorTituloIndex {
             color: $color-titulo;
             text-align: center;
             display: flex;
@@ -21,8 +21,8 @@ main {
 
             }
         }
-        }
-    
+    }
+
     .contenedorTextoIndex {
         color: $color-texto;
         text-align: center;
@@ -34,7 +34,8 @@ main {
         }
     }
 
-        div.tarjetas {
+    div {
+        .tarjetas {
             height: auto !important;
 
             img {
@@ -46,24 +47,39 @@ main {
                 color: $color-texto;
                 font-weight: map-get($fuentes, bold);
             }
-        }
-}
-
-@media screen and (min-width: 0px) and (max-width:768px)  {
-    main{
-        section{
-         .contenedorTituloIndex {
-            height: 20vh;
-            h1{
-                font-weight: 300;
-                padding: 8rem;
-                font-size: 25px;
-            }  
+            p{
+                color:rgb(164, 196, 167);
+                font-size: 15px;
+            }
+            a{
+                color: $color-texto;
+                font-weight: map-get($fuentes, bold);
+                &:hover{
+                    color: rgb(164, 196, 167);
+                }
+            }
         }
     }
+
+}
+
+@media screen and (min-width: 0px) and (max-width:768px) {
+    main {
+        section {
+            .contenedorTituloIndex {
+                height: 20vh;
+
+                h1 {
+                    font-weight: 300;
+                    padding: 8rem;
+                    font-size: 25px;
+                }
+            }
+        }
+
         .contenedorTextoIndex {
             h2 {
-            font-size: 15px;
+                font-size: 15px;
             }
         }
     }
