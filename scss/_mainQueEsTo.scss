@@ -1,18 +1,8 @@
 main {
     section {
         .contenedorTituloQue {
-            color: $color-titulo;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 40vh;
-            margin-bottom: 1rem;
+            @extend .contenedorTituloIndex;
             background-image: url(../assets/img/fondoQETO2.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
 
             h1 {
                 font-weight: map-get($fuentes, black);
@@ -30,7 +20,7 @@ main {
         div {
             .columnaIzquierdaPrimerCaja {
                 background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
-                object-fit: none;
+                object-fit: fill;
                 height: 35vh;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -64,6 +54,7 @@ main {
             .columnaIzquierdaSegundaCaja {
                 
                 background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
+                object-fit: fill;
                 height: 35vh;
                 background-repeat: no-repeat;
                 background-size: cover;
@@ -99,8 +90,13 @@ main {
 
         div {
             .columnaIzquierdaTercerCaja {
-                @extend .columnaIzquierdaSegundaCaja;
+                
                 background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
+                object-fit: contain;
+                height: 35vh;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
                 
 
             }
@@ -150,6 +146,7 @@ main {
 
                 .columnaIzquierdaPrimerCaja {
                     height: 25vh;
+                    
                 }
 
                 .columnaDerechaPrimerCaja {

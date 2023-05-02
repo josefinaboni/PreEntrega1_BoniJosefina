@@ -1,19 +1,9 @@
 main {
     section {
         .contenedorTituloNosotros {
-            color: $color-titulo;
-            text-align: center;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 35vh;
-            margin-bottom: 1rem;
+            @extend .contenedorTituloIndex;
             background-image: url(../assets/img/fondoNosotros2.jpg);
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            background-position: center;
-
+            
             h1 {
                 font-weight: map-get($fuentes, black);
                 padding: 8rem;

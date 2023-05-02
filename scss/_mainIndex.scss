@@ -27,10 +27,11 @@ main {
         color: $color-texto;
         text-align: center;
 
-        h2 {
+        h2{
             font-weight: map-get($fuentes, light);
             font-size: $tamano-texto-secundario;
-
+            
+            
         }
     }
 
@@ -40,7 +41,7 @@ main {
 
             img {
                 width: 100%;
-                object-fit: cover;
+                object-fit: contain;
             }
 
             h3 {
@@ -67,6 +68,7 @@ main {
     main {
         section {
             .contenedorTituloIndex {
+                background-image: url(../assets/img/fondo2\ indexMobile.jpg);
                 height: 20vh;
 
                 h1 {

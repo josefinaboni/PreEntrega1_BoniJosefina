@@ -35,7 +35,7 @@
     width: 50px;
   }
 }
-main section .contenedorTituloIndex {
+main section .contenedorTituloIndex, main section .contenedorTituloContacto, main section .contenedorTituloConsultorio, main section .contenedorTituloNosotros, main section .contenedorTituloQue {
   color: rgb(255, 255, 255);
   text-align: center;
   display: flex;
@@ -49,7 +49,7 @@ main section .contenedorTituloIndex {
   background-attachment: fixed;
   background-position: center;
 }
-main section .contenedorTituloIndex h1 {
+main section .contenedorTituloIndex h1, main section .contenedorTituloContacto h1, main section .contenedorTituloConsultorio h1, main section .contenedorTituloNosotros h1, main section .contenedorTituloQue h1 {
   font-weight: 900;
   padding: 8rem;
   font-size: 50px;
@@ -67,8 +67,7 @@ main div .tarjetas {
 }
 main div .tarjetas img {
   width: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: contain;
 }
 main div .tarjetas h3 {
   color: rgb(202, 99, 164);
@@ -87,10 +86,11 @@ main div .tarjetas a:hover {
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
-  main section .contenedorTituloIndex {
+  main section .contenedorTituloIndex, main section .contenedorTituloContacto, main section .contenedorTituloConsultorio, main section .contenedorTituloNosotros, main section .contenedorTituloQue {
+    background-image: url(../assets/img/fondo2\ indexMobile.jpg);
     height: 20vh;
   }
-  main section .contenedorTituloIndex h1 {
+  main section .contenedorTituloIndex h1, main section .contenedorTituloContacto h1, main section .contenedorTituloConsultorio h1, main section .contenedorTituloNosotros h1, main section .contenedorTituloQue h1 {
     font-weight: 300;
     padding: 8rem;
     font-size: 25px;
@@ -100,18 +100,7 @@ main div .tarjetas a:hover {
   }
 }
 main section .contenedorTituloQue {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 40vh;
-  margin-bottom: 1rem;
   background-image: url(../assets/img/fondoQETO2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 main section .contenedorTituloQue h1 {
   font-weight: 900;
@@ -124,8 +113,7 @@ main .containterPrimerCaja {
 }
 main .containterPrimerCaja div .columnaIzquierdaPrimerCaja {
   background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
-  -o-object-fit: none;
-     object-fit: none;
+  object-fit: fill;
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -151,8 +139,9 @@ main .containterPrimerCaja div .contenedorTextoPrimerCaja p {
   font-weight: 300;
   font-size: 15px;
 }
-main section div .columnaIzquierdaSegundaCaja, main section .containerTercerCaja div .columnaIzquierdaTercerCaja, main .containerTercerCaja section div .columnaIzquierdaTercerCaja {
+main section div .columnaIzquierdaSegundaCaja {
   background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
+  object-fit: fill;
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -184,6 +173,11 @@ main .containerTercerCaja {
 }
 main .containerTercerCaja div .columnaIzquierdaTercerCaja {
   background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
+  object-fit: contain;
+  height: 35vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 main .containerTercerCaja div .columnaDerechaTercerCaja {
   background-color: rgb(255, 255, 255);
@@ -227,7 +221,7 @@ main .containerTercerCaja div .contenedorTextoTercerCaja ol {
   main .containterPrimerCaja div .contenedorTextoPrimerCaja p {
     font-size: 12px;
   }
-  main section div .columnaIzquierdaSegundaCaja, main section .containerTercerCaja div .columnaIzquierdaTercerCaja, main .containerTercerCaja section div .columnaIzquierdaTercerCaja {
+  main section div .columnaIzquierdaSegundaCaja {
     height: 25vh;
   }
   main section div .columnaDerechaSegundaCaja {
@@ -253,18 +247,7 @@ main .containerTercerCaja div .contenedorTextoTercerCaja ol {
   }
 }
 main section .contenedorTituloNosotros {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35vh;
-  margin-bottom: 1rem;
   background-image: url(../assets/img/fondoNosotros2.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 main section .contenedorTituloNosotros h1 {
   font-weight: 900;
@@ -366,28 +349,15 @@ main .galeriaNosotros div .videoNosotros a:hover {
   }
   main .galeriaNosotros div .imagenes img {
     height: 20vh;
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
+    object-fit: scale-down;
   }
   main .galeriaNosotros div .videoNosotros video {
     height: 20vh;
-    -o-object-fit: scale-down;
-       object-fit: scale-down;
+    object-fit: scale-down;
   }
 }
 main section .contenedorTituloConsultorio {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35vh;
-  margin-bottom: 1rem;
   background-image: url(../assets/img/fondoConsultorio.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 main section .contenedorTituloConsultorio h1 {
   font-weight: 900;
@@ -463,18 +433,7 @@ main .contenedorTextoConsultorio .mapa {
   }
 }
 main section .contenedorTituloContacto {
-  color: rgb(255, 255, 255);
-  text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 35vh;
-  margin-bottom: 1rem;
   background-image: url(../assets/img/fondocontacto.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
 }
 main section .contenedorTituloContacto h1 {
   font-weight: 900;
@@ -494,9 +453,6 @@ main div .formulario {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-main div .formulario ::-moz-placeholder {
-  color: rgb(0, 0, 0) !important;
 }
 main div .formulario ::placeholder {
   color: rgb(0, 0, 0) !important;
@@ -542,8 +498,12 @@ main div .formulario .formularioContenedorBoton {
   justify-content: center;
   align-items: center;
 }
-.footer .contenedorCreditos p {
+.footer .contenedorCreditos .creditos p {
   color: rgb(255, 255, 255);
+}
+.footer .contenedorCreditos .creditos p:hover {
+  color: rgb(202, 99, 164);
+  font-weight: 700;
 }
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
@@ -553,4 +513,6 @@ main div .formulario .formularioContenedorBoton {
   .footer .contenedorCreditos {
     padding-top: 0rem;
   }
-}/*# sourceMappingURL=estilos.css.map */
+}
+
+/*# sourceMappingURL=estilos.css.map */
