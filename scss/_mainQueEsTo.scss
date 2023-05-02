@@ -127,10 +127,8 @@ main {
 @media screen and (min-width: 0px) and (max-width:768px) {
     main {
         section {
-
-
             .contenedorTituloQue {
-                height: 20vh;
+                height: 30vh;
 
                 h1 {
                     font-weight: 300;
@@ -159,7 +157,7 @@ main {
                     }
 
                     p {
-                        font-size: 12px;
+                        font-size: 10px;
                     }
                 }
             }
@@ -181,7 +179,7 @@ main {
                     }
 
                     ul {
-                        font-size: 10px;
+                        font-size: 8px;
                     }
                 }
             }
@@ -203,7 +201,7 @@ main {
                     }
 
                     ol {
-                        font-size: 10px;
+                        font-size: 8px;
                     }
                 }
             }

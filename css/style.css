@@ -87,8 +87,7 @@ main div .tarjetas a:hover {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   main section .contenedorTituloIndex, main section .contenedorTituloContacto, main section .contenedorTituloConsultorio, main section .contenedorTituloNosotros, main section .contenedorTituloQue {
-    background-image: url(../assets/img/fondo2\ indexMobile.jpg);
-    height: 20vh;
+    height: 30vh;
   }
   main section .contenedorTituloIndex h1, main section .contenedorTituloContacto h1, main section .contenedorTituloConsultorio h1, main section .contenedorTituloNosotros h1, main section .contenedorTituloQue h1 {
     font-weight: 300;
@@ -202,7 +201,7 @@ main .containerTercerCaja div .contenedorTextoTercerCaja ol {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   main section .contenedorTituloQue {
-    height: 20vh;
+    height: 30vh;
   }
   main section .contenedorTituloQue h1 {
     font-weight: 300;
@@ -219,7 +218,7 @@ main .containerTercerCaja div .contenedorTextoTercerCaja ol {
     font-size: 15px;
   }
   main .containterPrimerCaja div .contenedorTextoPrimerCaja p {
-    font-size: 12px;
+    font-size: 10px;
   }
   main section div .columnaIzquierdaSegundaCaja {
     height: 25vh;
@@ -231,7 +230,7 @@ main .containerTercerCaja div .contenedorTextoTercerCaja ol {
     font-size: 15px;
   }
   main section div .contenedorTextoSegundaCaja ul {
-    font-size: 10px;
+    font-size: 8px;
   }
   main .containerTercerCaja div .columnaIzquierdaTercerCaja {
     height: 25vh;
@@ -243,7 +242,7 @@ main .containerTercerCaja div .contenedorTextoTercerCaja ol {
     font-size: 15px;
   }
   main .containerTercerCaja div .contenedorTextoTercerCaja ol {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 main section .contenedorTituloNosotros {
@@ -330,7 +329,7 @@ main .galeriaNosotros div .videoNosotros a:hover {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   main section .contenedorTituloNosotros {
-    height: 20vh;
+    height: 30vh;
   }
   main section .contenedorTituloNosotros h1 {
     font-weight: 300;
@@ -408,7 +407,7 @@ main .contenedorTextoConsultorio .mapa {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   main section .contenedorTituloConsultorio {
-    height: 20vh;
+    height: 30vh;
   }
   main section .contenedorTituloConsultorio h1 {
     font-weight: 300;
@@ -463,7 +462,7 @@ main div .formulario .formularioContenedorBoton {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   main section .contenedorTituloContacto {
-    height: 20vh;
+    height: 30vh;
   }
   main section .contenedorTituloContacto h1 {
     font-weight: 300;
@@ -508,7 +507,7 @@ main div .formulario .formularioContenedorBoton {
 
 @media screen and (min-width: 0px) and (max-width: 768px) {
   .footer div div div a .iconos {
-    font-size: 30px;
+    font-size: 35px;
   }
   .footer .contenedorCreditos {
     padding-top: 0rem;
