@@ -341,7 +341,7 @@ main .galeriaNosotros div .videoNosotros a:hover {
     height: 20vh;
   }
   main div div .contenedorTextoNosotros h3 {
-    font-size: 10px;
+    font-size: 15px;
     font-weight: 200;
   }
   main .textoGaleriaNosotros p {
@@ -416,7 +416,7 @@ main .contenedorTextoConsultorio .mapa {
     font-size: 25px;
   }
   main .contenedorTextoConsultorio p {
-    font-size: 10px;
+    font-size: 15px;
   }
   main .textoGaleriaConsultorio h2 {
     font-size: 12px;
