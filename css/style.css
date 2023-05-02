@@ -212,10 +212,10 @@ main .containerTercerCaja div .contenedorTextoTercerCaja ol {
     height: 25vh;
   }
   main .containterPrimerCaja div .columnaDerechaPrimerCaja {
-    height: 25vh;
+    height: 30vh;
   }
   main .containterPrimerCaja div .contenedorTextoPrimerCaja h2 {
-    font-size: 15px;
+    font-size: 12px;
   }
   main .containterPrimerCaja div .contenedorTextoPrimerCaja p {
     font-size: 10px;
@@ -224,25 +224,25 @@ main .containerTercerCaja div .contenedorTextoTercerCaja ol {
     height: 25vh;
   }
   main section div .columnaDerechaSegundaCaja {
-    height: 25vh;
+    height: 30vh;
   }
   main section div .contenedorTextoSegundaCaja h2 {
-    font-size: 15px;
+    font-size: 12px;
   }
   main section div .contenedorTextoSegundaCaja ul {
-    font-size: 8px;
+    font-size: 10px;
   }
   main .containerTercerCaja div .columnaIzquierdaTercerCaja {
     height: 25vh;
   }
   main .containerTercerCaja div .columnaDerechaTercerCaja {
-    height: 25vh;
+    height: 30vh;
   }
   main .containerTercerCaja div .contenedorTextoTercerCaja h2 {
-    font-size: 15px;
+    font-size: 12px;
   }
   main .containerTercerCaja div .contenedorTextoTercerCaja ol {
-    font-size: 8px;
+    font-size: 10px;
   }
 }
 main section .contenedorTituloNosotros {
