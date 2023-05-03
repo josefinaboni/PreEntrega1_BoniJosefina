@@ -88,6 +88,7 @@ main div .tarjetas a:hover {
 @media screen and (min-width: 0px) and (max-width: 768px) {
   main section .contenedorTituloIndex, main section .contenedorTituloContacto, main section .contenedorTituloConsultorio, main section .contenedorTituloNosotros, main section .contenedorTituloQue {
     height: 30vh;
+    background-image: url(../assets/img/fondo2\ indexMobile.jpg);
   }
   main section .contenedorTituloIndex h1, main section .contenedorTituloContacto h1, main section .contenedorTituloConsultorio h1, main section .contenedorTituloNosotros h1, main section .contenedorTituloQue h1 {
     font-weight: 300;
@@ -125,16 +126,14 @@ main .containterPrimerCaja div .columnaDerechaPrimerCaja {
   align-items: center;
   flex-direction: column;
   height: 35vh;
-}
-main .containterPrimerCaja div .contenedorTextoPrimerCaja {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main .containterPrimerCaja div .contenedorTextoPrimerCaja h2 {
+main .containterPrimerCaja div .columnaDerechaPrimerCaja h2 {
   font-size: 25px;
   font-weight: 700;
 }
-main .containterPrimerCaja div .contenedorTextoPrimerCaja p {
+main .containterPrimerCaja div .columnaDerechaPrimerCaja p {
   font-weight: 300;
   font-size: 15px;
 }
@@ -153,16 +152,14 @@ main section div .columnaDerechaSegundaCaja {
   align-items: center;
   flex-direction: column;
   height: 35vh;
-}
-main section div .contenedorTextoSegundaCaja {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main section div .contenedorTextoSegundaCaja h2 {
+main section div .columnaDerechaSegundaCaja h2 {
   font-size: 25px;
   font-weight: 700;
 }
-main section div .contenedorTextoSegundaCaja ul {
+main section div .columnaDerechaSegundaCaja ul {
   font-weight: 300;
   font-size: 15px;
 }
@@ -185,16 +182,14 @@ main .containerTercerCaja div .columnaDerechaTercerCaja {
   align-items: center;
   flex-direction: column;
   height: 35vh;
-}
-main .containerTercerCaja div .contenedorTextoTercerCaja {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main .containerTercerCaja div .contenedorTextoTercerCaja h2 {
+main .containerTercerCaja div .columnaDerechaTercerCaja h2 {
   font-size: 25px;
   font-weight: 700;
 }
-main .containerTercerCaja div .contenedorTextoTercerCaja ol {
+main .containerTercerCaja div .columnaDerechaTercerCaja ol {
   font-weight: 300;
   font-size: 15px;
 }
@@ -214,10 +209,10 @@ main .containerTercerCaja div .contenedorTextoTercerCaja ol {
   main .containterPrimerCaja div .columnaDerechaPrimerCaja {
     height: 30vh;
   }
-  main .containterPrimerCaja div .contenedorTextoPrimerCaja h2 {
+  main .containterPrimerCaja div .columnaDerechaPrimerCaja h2 {
     font-size: 12px;
   }
-  main .containterPrimerCaja div .contenedorTextoPrimerCaja p {
+  main .containterPrimerCaja div .columnaDerechaPrimerCaja p {
     font-size: 10px;
   }
   main section div .columnaIzquierdaSegundaCaja {
@@ -226,10 +221,10 @@ main .containerTercerCaja div .contenedorTextoTercerCaja ol {
   main section div .columnaDerechaSegundaCaja {
     height: 30vh;
   }
-  main section div .contenedorTextoSegundaCaja h2 {
+  main section div .columnaDerechaSegundaCaja h2 {
     font-size: 12px;
   }
-  main section div .contenedorTextoSegundaCaja ul {
+  main section div .columnaDerechaSegundaCaja ul {
     font-size: 10px;
   }
   main .containerTercerCaja div .columnaIzquierdaTercerCaja {
@@ -238,10 +233,10 @@ main .containerTercerCaja div .contenedorTextoTercerCaja ol {
   main .containerTercerCaja div .columnaDerechaTercerCaja {
     height: 30vh;
   }
-  main .containerTercerCaja div .contenedorTextoTercerCaja h2 {
+  main .containerTercerCaja div .columnaDerechaTercerCaja h2 {
     font-size: 12px;
   }
-  main .containerTercerCaja div .contenedorTextoTercerCaja ol {
+  main .containerTercerCaja div .columnaDerechaTercerCaja ol {
     font-size: 10px;
   }
 }
