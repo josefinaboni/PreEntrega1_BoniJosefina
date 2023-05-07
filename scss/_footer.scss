@@ -25,6 +25,24 @@
             }
         }
     }
+    div{
+        .contactoFooter{
+            display: flex;
+        justify-content: center;
+        align-items: center;
+            li{
+                a{
+                    color:rgb(202, 99, 164);
+                    font-weight: 800;
+                    &:hover{
+                        color:  rgb(255, 255, 255);
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        
+    }
 
 
     .contenedorCreditos {

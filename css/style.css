@@ -5,6 +5,15 @@
   box-sizing: border-box;
 }
 
+.resaltado {
+  font-weight: 700;
+  color: rgb(164, 196, 167);
+}
+
+.resaltadoP {
+  font-weight: 700;
+}
+
 .body {
   background-color: rgb(229, 242, 230);
   font-family: "Nunito", sans-serif;
@@ -46,7 +55,7 @@ main section .contenedorTituloIndex, main section .contenedorTituloContacto, mai
   background-image: url(../assets/img/fondo2\ index.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed;
+  background-attachment: initial;
   background-position: center;
 }
 main section .contenedorTituloIndex h1, main section .contenedorTituloContacto h1, main section .contenedorTituloConsultorio h1, main section .contenedorTituloNosotros h1, main section .contenedorTituloQue h1 {
@@ -68,6 +77,7 @@ main div .tarjetas {
 main div .tarjetas img {
   width: 100%;
   object-fit: contain;
+  height: auto;
 }
 main div .tarjetas h3 {
   color: rgb(202, 99, 164);
@@ -89,6 +99,7 @@ main div .tarjetas a:hover {
   main section .contenedorTituloIndex, main section .contenedorTituloContacto, main section .contenedorTituloConsultorio, main section .contenedorTituloNosotros, main section .contenedorTituloQue {
     height: 30vh;
     background-image: url(../assets/img/fondo2\ indexMobile.jpg);
+    background-attachment: initial;
   }
   main section .contenedorTituloIndex h1, main section .contenedorTituloContacto h1, main section .contenedorTituloConsultorio h1, main section .contenedorTituloNosotros h1, main section .contenedorTituloQue h1 {
     font-weight: 300;
@@ -107,19 +118,22 @@ main section .contenedorTituloQue h1 {
   padding: 8rem;
   font-size: 50px;
 }
-main .containterPrimerCaja {
+main .contenedorAnimaciones {
+  overflow: hidden;
+}
+main .contenedorAnimaciones .containterPrimerCaja {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-main .containterPrimerCaja div .columnaIzquierdaPrimerCaja {
-  background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
+main .contenedorAnimaciones .containterPrimerCaja div .columnaIzquierdaPrimerCaja {
+  background-image: url(../assets/img/card1.jpg);
   object-fit: fill;
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-main .containterPrimerCaja div .columnaDerechaPrimerCaja {
+main .contenedorAnimaciones .containterPrimerCaja div .columnaDerechaPrimerCaja {
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -129,23 +143,23 @@ main .containterPrimerCaja div .columnaDerechaPrimerCaja {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main .containterPrimerCaja div .columnaDerechaPrimerCaja h2 {
+main .contenedorAnimaciones .containterPrimerCaja div .columnaDerechaPrimerCaja h2 {
   font-size: 25px;
   font-weight: 700;
 }
-main .containterPrimerCaja div .columnaDerechaPrimerCaja p {
+main .contenedorAnimaciones .containterPrimerCaja div .columnaDerechaPrimerCaja p {
   font-weight: 300;
   font-size: 15px;
 }
-main section div .columnaIzquierdaSegundaCaja {
-  background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
+main .contenedorAnimaciones section div .columnaIzquierdaSegundaCaja {
+  background-image: url(../assets/img/card2.jpg);
   object-fit: fill;
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-main section div .columnaDerechaSegundaCaja {
+main .contenedorAnimaciones section div .columnaDerechaSegundaCaja {
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -155,27 +169,27 @@ main section div .columnaDerechaSegundaCaja {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main section div .columnaDerechaSegundaCaja h2 {
+main .contenedorAnimaciones section div .columnaDerechaSegundaCaja h2 {
   font-size: 25px;
   font-weight: 700;
 }
-main section div .columnaDerechaSegundaCaja ul {
+main .contenedorAnimaciones section div .columnaDerechaSegundaCaja ul {
   font-weight: 300;
   font-size: 15px;
 }
-main .containerTercerCaja {
+main .contenedorAnimaciones .containerTercerCaja {
   margin-top: 2rem;
   margin-bottom: 2rem;
 }
-main .containerTercerCaja div .columnaIzquierdaTercerCaja {
-  background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
+main .contenedorAnimaciones .containerTercerCaja div .columnaIzquierdaTercerCaja {
+  background-image: url(../assets/img/card3.jpeg);
   object-fit: contain;
   height: 35vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
-main .containerTercerCaja div .columnaDerechaTercerCaja {
+main .contenedorAnimaciones .containerTercerCaja div .columnaDerechaTercerCaja {
   background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
@@ -185,11 +199,11 @@ main .containerTercerCaja div .columnaDerechaTercerCaja {
   color: rgb(202, 99, 164);
   text-align: center;
 }
-main .containerTercerCaja div .columnaDerechaTercerCaja h2 {
+main .contenedorAnimaciones .containerTercerCaja div .columnaDerechaTercerCaja h2 {
   font-size: 25px;
   font-weight: 700;
 }
-main .containerTercerCaja div .columnaDerechaTercerCaja ol {
+main .contenedorAnimaciones .containerTercerCaja div .columnaDerechaTercerCaja ol {
   font-weight: 300;
   font-size: 15px;
 }
@@ -197,46 +211,47 @@ main .containerTercerCaja div .columnaDerechaTercerCaja ol {
 @media screen and (min-width: 0px) and (max-width: 768px) {
   main section .contenedorTituloQue {
     height: 30vh;
+    background-image: url(../assets/img/fondoQETO2\ copia.jpg);
   }
   main section .contenedorTituloQue h1 {
     font-weight: 300;
     padding: 8rem;
     font-size: 25px;
   }
-  main .containterPrimerCaja div .columnaIzquierdaPrimerCaja {
-    height: 25vh;
-  }
-  main .containterPrimerCaja div .columnaDerechaPrimerCaja {
+  main .contenedorAnimaciones .containterPrimerCaja div .columnaIzquierdaPrimerCaja {
     height: 30vh;
   }
-  main .containterPrimerCaja div .columnaDerechaPrimerCaja h2 {
+  main .contenedorAnimaciones .containterPrimerCaja div .columnaDerechaPrimerCaja {
+    height: 30vh;
+  }
+  main .contenedorAnimaciones .containterPrimerCaja div .columnaDerechaPrimerCaja h2 {
     font-size: 12px;
   }
-  main .containterPrimerCaja div .columnaDerechaPrimerCaja p {
+  main .contenedorAnimaciones .containterPrimerCaja div .columnaDerechaPrimerCaja p {
     font-size: 10px;
   }
-  main section div .columnaIzquierdaSegundaCaja {
-    height: 25vh;
-  }
-  main section div .columnaDerechaSegundaCaja {
+  main .contenedorAnimaciones section div .columnaIzquierdaSegundaCaja {
     height: 30vh;
   }
-  main section div .columnaDerechaSegundaCaja h2 {
+  main .contenedorAnimaciones section div .columnaDerechaSegundaCaja {
+    height: 30vh;
+  }
+  main .contenedorAnimaciones section div .columnaDerechaSegundaCaja h2 {
     font-size: 12px;
   }
-  main section div .columnaDerechaSegundaCaja ul {
+  main .contenedorAnimaciones section div .columnaDerechaSegundaCaja ul {
     font-size: 10px;
   }
-  main .containerTercerCaja div .columnaIzquierdaTercerCaja {
-    height: 25vh;
-  }
-  main .containerTercerCaja div .columnaDerechaTercerCaja {
+  main .contenedorAnimaciones .containerTercerCaja div .columnaIzquierdaTercerCaja {
     height: 30vh;
   }
-  main .containerTercerCaja div .columnaDerechaTercerCaja h2 {
+  main .contenedorAnimaciones .containerTercerCaja div .columnaDerechaTercerCaja {
+    height: 30vh;
+  }
+  main .contenedorAnimaciones .containerTercerCaja div .columnaDerechaTercerCaja h2 {
     font-size: 12px;
   }
-  main .containerTercerCaja div .columnaDerechaTercerCaja ol {
+  main .contenedorAnimaciones .containerTercerCaja div .columnaDerechaTercerCaja ol {
     font-size: 10px;
   }
 }
@@ -286,6 +301,7 @@ main .galeriaNosotros {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  overflow: hidden;
 }
 main .galeriaNosotros div .imagenes {
   background-color: rgb(255, 255, 255);
@@ -325,6 +341,7 @@ main .galeriaNosotros div .videoNosotros a:hover {
 @media screen and (min-width: 0px) and (max-width: 768px) {
   main section .contenedorTituloNosotros {
     height: 30vh;
+    background-image: url(../assets/img/fondoNosotros2\ copia.jpg);
   }
   main section .contenedorTituloNosotros h1 {
     font-weight: 300;
@@ -381,6 +398,7 @@ main .contenedorGaleriaConsultorio {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 }
 main .contenedorGaleriaConsultorio .imagenesConsultorio {
   background-color: rgb(255, 255, 255);
@@ -403,6 +421,7 @@ main .contenedorTextoConsultorio .mapa {
 @media screen and (min-width: 0px) and (max-width: 768px) {
   main section .contenedorTituloConsultorio {
     height: 30vh;
+    background-image: url(../assets/img/fondoConsultorio\ copia.jpg);
   }
   main section .contenedorTituloConsultorio h1 {
     font-weight: 300;
@@ -449,7 +468,7 @@ main div .formulario {
   align-items: center;
 }
 main div .formulario ::placeholder {
-  color: rgb(0, 0, 0) !important;
+  color: rgb(202, 99, 164) !important;
 }
 main div .formulario .formularioContenedorBoton {
   background-color: rgb(202, 99, 164);
@@ -458,6 +477,8 @@ main div .formulario .formularioContenedorBoton {
 @media screen and (min-width: 0px) and (max-width: 768px) {
   main section .contenedorTituloContacto {
     height: 30vh;
+    background-image: url(../assets/img/fondocontacto\ copia.jpg);
+    background-attachment: initial;
   }
   main section .contenedorTituloContacto h1 {
     font-weight: 300;
@@ -485,6 +506,19 @@ main div .formulario .formularioContenedorBoton {
 }
 .footer div div div a .iconos:hover {
   color: rgb(255, 255, 255) !important;
+}
+.footer div .contactoFooter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer div .contactoFooter li a {
+  color: rgb(202, 99, 164);
+  font-weight: 800;
+}
+.footer div .contactoFooter li a:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
 }
 .footer .contenedorCreditos {
   padding-top: 1rem;

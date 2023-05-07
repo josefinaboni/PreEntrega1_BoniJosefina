@@ -59,6 +59,7 @@ main {
 
     .galeriaNosotros {
         @include flexboxSinH (center, center, column, );
+        overflow: hidden;
         div{
             .imagenes {
                 background-color: $fondo-cards;
@@ -106,6 +107,7 @@ main {
         section {
             .contenedorTituloNosotros {
                 height: 30vh;
+                background-image: url(../assets/img/fondoNosotros2\ copia.jpg);
 
                 h1 {
                     font-weight: 300;
@@ -147,6 +149,7 @@ main {
                 .imagenes {
 
                     img {
+                        
                         height: 20vh;
                         object-fit: contain;
                     }

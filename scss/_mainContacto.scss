@@ -30,7 +30,7 @@ main {
             align-items: center;
 
             ::placeholder {
-                color: rgb(0, 0, 0) !important;
+                color:  rgb(202, 99, 164) !important;
             }
 
             .formularioContenedorBoton {
@@ -47,6 +47,8 @@ main {
         section{
         .contenedorTituloContacto {
             height: 30vh;
+            background-image: url(../assets/img/fondocontacto\ copia.jpg);
+            background-attachment: initial;
 
             h1 {
                 font-weight: 300;

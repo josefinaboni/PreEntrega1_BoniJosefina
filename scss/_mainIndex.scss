@@ -11,7 +11,7 @@ main {
             background-image: url(../assets/img/fondo2\ index.jpg);
             background-size: cover;
             background-repeat: no-repeat;
-            background-attachment: fixed;
+            background-attachment: initial;
             background-position: center;
 
             h1 {
@@ -42,6 +42,7 @@ main {
             img {
                 width: 100%;
                 object-fit: contain;
+                height: auto;
             }
 
             h3 {
@@ -70,6 +71,8 @@ main {
             .contenedorTituloIndex {
                 height: 30vh;
                 background-image: url(../assets/img/fondo2\ indexMobile.jpg);
+                background-attachment: initial;
+
                 
                 h1 {
                     font-weight: 300;
@@ -84,5 +87,7 @@ main {
                 font-size: 15px;
             }
         }
+        
+        
     }
 }

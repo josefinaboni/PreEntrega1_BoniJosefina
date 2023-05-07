@@ -12,117 +12,122 @@ main {
         }
     }
 
+    .contenedorAnimaciones {
+        overflow: hidden;
 
-    .containterPrimerCaja {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        .containterPrimerCaja {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
 
-        div {
-            .columnaIzquierdaPrimerCaja {
-                background-image: url(../assets/img/juego\ arcoirisjpg.jpg);
-                object-fit: fill;
-                height: 35vh;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-            }
-
-            .columnaDerechaPrimerCaja {
-                background-color: $fondo-cards;
-                @include flexbox (center, center, column, 35vh);
-                color: $color-texto;
-                text-align: center;
-
-                h2 {
-                    font-size: $titulo-cards;
-                    font-weight: map-get($fuentes, bold);
+            div {
+                .columnaIzquierdaPrimerCaja {
+                    background-image: url(../assets/img/card1.jpg);
+                    object-fit: fill;
+                    height: 35vh;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
                 }
 
-                p {
-                    font-weight: map-get($fuentes, light);
-                    font-size: $tamano-texto-cards;
-                }
-            }
+                .columnaDerechaPrimerCaja {
+                    background-color: $fondo-cards;
+                    @include flexbox (center, center, column, 35vh);
+                    color: $color-texto;
+                    text-align: center;
 
-            
+                    h2 {
+                        font-size: $titulo-cards;
+                        font-weight: map-get($fuentes, bold);
+                    }
+
+                    p {
+                        font-weight: map-get($fuentes, light);
+                        font-size: $tamano-texto-cards;
+                    }
+                }
+
+
+            }
         }
-    }
 
-    section {
-        div {
-            .columnaIzquierdaSegundaCaja {
-                
-                background-image: url(../assets/img/full-shot-kid-playing-floor-with-wooden-toy.jpg);
-                object-fit: fill;
-                height: 35vh;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-            }
+        section {
+            div {
+                .columnaIzquierdaSegundaCaja {
 
-            .columnaDerechaSegundaCaja {
-                background-color: $fondo-cards;
-                @include flexbox (center, center, column, 35vh);
-                color: $color-texto;
-                text-align: center;
-
-                h2 {
-                    font-size: $titulo-cards;
-                    font-weight: map-get($fuentes, bold);
-
+                    background-image: url(../assets/img/card2.jpg);
+                    object-fit: fill;
+                    height: 35vh;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
                 }
 
-                ul {
-                    font-weight: map-get($fuentes, light);
-                    font-size: $tamano-texto-cards;
-                }
-            }
+                .columnaDerechaSegundaCaja {
+                    background-color: $fondo-cards;
+                    @include flexbox (center, center, column, 35vh);
+                    color: $color-texto;
+                    text-align: center;
 
+                    h2 {
+                        font-size: $titulo-cards;
+                        font-weight: map-get($fuentes, bold);
+
+                    }
+
+                    ul {
+                        font-weight: map-get($fuentes, light);
+                        font-size: $tamano-texto-cards;
+                    }
+                }
+
+            }
         }
-    }
 
-    .containerTercerCaja {
-        margin-top: 2rem;
-        margin-bottom: 2rem;
+        .containerTercerCaja {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
 
-        div {
-            .columnaIzquierdaTercerCaja {
-                
-                background-image: url(../assets/img/little_boy_playing_blocks_male_nurse_1200x852_77407.jpeg);
-                object-fit: contain;
-                height: 35vh;
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
-                
+            div {
+                .columnaIzquierdaTercerCaja {
 
-            }
+                    background-image: url(../assets/img/card3.jpeg);
+                    object-fit: contain;
+                    height: 35vh;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
 
-            .columnaDerechaTercerCaja {
-                background-color: $fondo-cards;
-                @include flexbox (center, center, column, 35vh);
-                color: $color-texto;
-                text-align: center;
-
-                h2 {
-                    font-size: $titulo-cards;
-                    font-weight: map-get($fuentes, bold);
 
                 }
 
-                ol {
-                    font-weight: map-get($fuentes, light);
-                    font-size: $tamano-texto-cards;
+                .columnaDerechaTercerCaja {
+                    background-color: $fondo-cards;
+                    @include flexbox (center, center, column, 35vh);
+                    color: $color-texto;
+                    text-align: center;
+
+                    h2 {
+                        font-size: $titulo-cards;
+                        font-weight: map-get($fuentes, bold);
+
+                    }
+
+                    ol {
+                        font-weight: map-get($fuentes, light);
+                        font-size: $tamano-texto-cards;
+                    }
                 }
             }
         }
     }
 }
+
 @media screen and (min-width: 0px) and (max-width:768px) {
     main {
         section {
             .contenedorTituloQue {
                 height: 30vh;
+                background-image: url(../assets/img/fondoQETO2\ copia.jpg);
 
                 h1 {
                     font-weight: 300;
@@ -131,18 +136,22 @@ main {
                 }
             }
         }
+        .contenedorAnimaciones {
+
+        
 
         .containterPrimerCaja {
             div {
 
 
                 .columnaIzquierdaPrimerCaja {
-                    height: 25vh;
-                    
+                    height: 30vh;
+
                 }
 
                 .columnaDerechaPrimerCaja {
                     height: 30vh;
+
                     h2 {
                         font-size: 12px;
                     }
@@ -158,11 +167,12 @@ main {
         section {
             div {
                 .columnaIzquierdaSegundaCaja {
-                    height: 25vh;
+                    height: 30vh;
                 }
 
                 .columnaDerechaSegundaCaja {
                     height: 30vh;
+
                     h2 {
                         font-size: 12px;
                     }
@@ -178,11 +188,12 @@ main {
         .containerTercerCaja {
             div {
                 .columnaIzquierdaTercerCaja {
-                    height: 25vh;
+                    height: 30vh;
                 }
 
                 .columnaDerechaTercerCaja {
                     height: 30vh;
+
                     h2 {
                         font-size: 12px;
                     }
@@ -195,4 +206,5 @@ main {
             }
         }
     }
+}
 }

@@ -14,8 +14,6 @@ main {
         }
     }
 
-
-
     .contenedorTextoConsultorio {
         color: $color-texto;
         text-align: center;
@@ -44,6 +42,7 @@ main {
         flex-wrap: wrap;
         align-items: center;
         justify-content: center;
+        overflow: hidden;
 
         .imagenesConsultorio {
             background-color: $fondo-cards;
@@ -75,6 +74,8 @@ main {
         section {
             .contenedorTituloConsultorio {
                 height: 30vh;
+                background-image: url(../assets/img/fondoConsultorio\ copia.jpg);
+                
 
                 h1 {
                     font-weight: 300;
