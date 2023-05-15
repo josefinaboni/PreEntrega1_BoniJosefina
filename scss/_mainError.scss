@@ -32,15 +32,51 @@
         }
 
 
-        .rotating-css {
+        .iconoError {
             animation: rotating 2s linear;
     animation-iteration-count: infinite;
             color: rgb(202, 99, 164);
             font-size: 100px;
             margin-top: 10rem;
+            @keyframes rotating{
+                to {
+                    transform: rotate(360deg);
+                }
+            
+            }
         }
+       
 
 
     }
 
+}
+@media screen and (min-width: 0px) and (max-width:768px) {
+.mainError {
+    background-image: url(../assets/img/fondo\ titulo\ copia.jpg);
+    
+    .contenedorTituloError {
+        h1 {
+            font-size: 25px;
+        }
+
+        h2 {
+           
+            font-size: 15px;
+        }
+
+        a {
+            font-size: 15px;
+        }
+
+
+        .iconoError {
+            font-size: 50px;
+        }
+       
+
+
+    }
+
+}
 }
